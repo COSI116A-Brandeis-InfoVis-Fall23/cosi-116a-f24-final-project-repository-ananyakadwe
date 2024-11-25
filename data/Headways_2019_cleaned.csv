@@ -1,0 +1,412 @@
+Unnamed: 0,stop_id,direction_id,destination,headway_time_sec,stop_name
+0,70001,0,Forest Hills,684.6722689075631,
+1,70001,1,Oak Grove,519.1486227201552,
+2,70002,0,Forest Hills,521.1407172534441,Green Street
+3,70003,1,Oak Grove,512.0219273330455,Green Street
+4,70004,0,Forest Hills,521.4352073494209,Stony Brook
+5,70005,1,Oak Grove,515.316269029766,Stony Brook
+6,70006,0,Forest Hills,519.1467165419784,Jackson Square
+7,70007,1,Oak Grove,516.1003891050584,Jackson Square
+8,70008,0,Forest Hills,516.3767835812791,Roxbury Crossing
+9,70009,1,Oak Grove,516.283893767402,Roxbury Crossing
+10,70010,0,Forest Hills,512.1409056192035,Ruggles
+11,70011,1,Oak Grove,516.527166437414,Ruggles
+12,70012,0,Forest Hills,517.0776963128254,Massachusetts Avenue
+13,70013,1,Oak Grove,517.2635670408812,Massachusetts Avenue
+14,70014,0,Forest Hills,517.3964059645695,Back Bay
+15,70015,1,Oak Grove,517.1264766171467,Back Bay
+16,70016,0,Forest Hills,514.434165341446,Tufts Medical Center
+17,70017,1,Oak Grove,519.1029551151083,Tufts Medical Center
+18,70018,0,Forest Hills,513.669280422822,Chinatown
+19,70019,1,Oak Grove,513.1545941315056,Chinatown
+20,70020,0,Forest Hills,513.0834748951726,Downtown Crossing
+21,70021,1,Oak Grove,509.1837389618781,Downtown Crossing
+22,70022,0,Forest Hills,514.7778799674894,State
+23,70023,1,Oak Grove,509.131648361152,State
+24,70024,0,Forest Hills,514.5401105019702,Haymarket
+25,70025,1,Oak Grove,508.98235978288966,Haymarket
+26,70026,0,Forest Hills,514.531003189144,North Station
+27,70027,1,Oak Grove,509.035666594874,North Station
+28,70028,0,Forest Hills,514.1860554782049,Community College
+29,70029,1,Oak Grove,508.82528770311626,Community College
+30,70030,0,Forest Hills,523.6969875338981,Sullivan Square
+31,70031,1,Oak Grove,508.6387195455042,Sullivan Square
+32,70032,0,Forest Hills,523.1757934734019,Wellington
+33,70033,1,Oak Grove,523.439249357108,Wellington
+34,70034,0,Forest Hills,522.5432281836974,Malden Center
+35,70035,1,Oak Grove,510.8086268267338,Malden Center
+36,70036,0,Forest Hills,533.1263153068476,
+37,70036,1,Oak Grove,993.3200612557428,
+38,70038,1,Wonderland,425.1439306647964,
+39,70039,0,Bowdoin,417.2882575883507,Government Center
+40,70040,1,Wonderland,426.29069148050735,Government Center
+41,70041,0,Bowdoin,417.52140504939626,State
+42,70042,1,Wonderland,426.8298169484762,State
+43,70043,0,Bowdoin,416.1829385775504,Aquarium
+44,70044,1,Wonderland,426.49521379494365,Aquarium
+45,70045,0,Bowdoin,416.2982628047565,Maverick
+46,70046,1,Wonderland,425.59185414401605,Maverick
+47,70047,0,Bowdoin,416.2643494473299,Airport
+48,70048,1,Wonderland,425.1160415243364,Airport
+49,70049,0,Bowdoin,415.77853165738674,Wood Island
+50,70050,1,Wonderland,423.76804882126737,Wood Island
+51,70051,0,Bowdoin,419.4933751197005,Orient Heights
+52,70052,1,Wonderland,421.39198706068674,Orient Heights
+53,70053,0,Bowdoin,426.6511244247634,Suffolk Downs
+54,70054,1,Wonderland,421.07484842855456,Suffolk Downs
+55,70055,0,Bowdoin,425.913726169844,Beachmont
+56,70056,1,Wonderland,420.7088748607501,Beachmont
+57,70057,0,Bowdoin,425.3069184363776,Revere Beach
+58,70058,1,Wonderland,420.2280295865982,Revere Beach
+59,70059,0,Bowdoin,425.8780913790694,
+60,70060,1,Wonderland,410.3333333333333,
+61,70061,0,Ashmont,747.3758958556937,Alewife
+62,70061,0,Braintree,693.7654391124181,Alewife
+63,70061,0,Southbound,368.3899024183284,Alewife
+64,70061,1,Alewife,601.5504587155963,Alewife
+65,70063,0,Ashmont,739.664267921395,Davis
+66,70063,0,Braintree,686.5712777539508,Davis
+67,70063,0,Southbound,362.3414313346228,Davis
+68,70064,1,Alewife,368.60084820171295,Davis
+69,70065,0,Ashmont,742.115731874145,Porter
+70,70065,0,Braintree,686.6599024904467,Porter
+71,70065,0,Southbound,363.6799981611732,Porter
+72,70066,1,Alewife,369.6353464492867,Porter
+73,70067,0,Ashmont,765.1028288653366,Harvard
+74,70067,0,Braintree,710.2026241799438,Harvard
+75,70067,0,Southbound,373.41323001197287,Harvard
+76,70068,1,Alewife,373.01026640476334,Harvard
+77,70069,0,Ashmont,757.2306616030381,Central
+78,70069,0,Braintree,703.3273978275412,Central
+79,70069,0,Southbound,372.0240990789591,Central
+80,70070,1,Alewife,369.6547995735969,Central
+81,70071,0,Ashmont,757.4184795243947,Kendall/MIT
+82,70071,0,Braintree,703.139440461841,Kendall/MIT
+83,70071,0,Southbound,369.0476908918091,Kendall/MIT
+84,70072,1,Alewife,369.3540429028779,Kendall/MIT
+85,70073,0,Ashmont,753.5526227076591,Charles/MGH
+86,70073,0,Braintree,699.3329893915454,Charles/MGH
+87,70073,0,Southbound,367.3300145293263,Charles/MGH
+88,70074,1,Alewife,369.1725906814388,Charles/MGH
+89,70075,0,Ashmont,754.4843791722296,Park Street
+90,70075,0,Braintree,702.9142159969578,Park Street
+91,70075,0,Southbound,366.77435143653776,Park Street
+92,70076,1,Alewife,369.0205011734424,Park Street
+93,70077,0,Ashmont,753.8609609609609,Downtown Crossing
+94,70077,0,Braintree,702.4570686268297,Downtown Crossing
+95,70077,0,Southbound,366.53968710718016,Downtown Crossing
+96,70078,1,Alewife,368.7898803325939,Downtown Crossing
+97,70079,0,Ashmont,753.6722675040086,South Station
+98,70079,0,Braintree,702.4776833829962,South Station
+99,70079,0,Southbound,366.56326369728026,South Station
+100,70080,1,Alewife,368.641219993671,South Station
+101,70081,0,Ashmont,753.7557182985554,Broadway
+102,70081,0,Braintree,702.7375035704084,Broadway
+103,70081,0,Southbound,366.6984881143933,Broadway
+104,70082,1,Alewife,369.34065851079896,Broadway
+105,70083,0,Ashmont,746.4609426102523,Andrew
+106,70083,0,Braintree,697.7790120616557,Andrew
+107,70083,0,Southbound,363.3326254522573,Andrew
+108,70084,1,Alewife,364.2670199176799,Andrew
+109,70085,0,Ashmont,738.6507706494533,JFK/UMass
+110,70086,1,Alewife,740.4103775285761,JFK/UMass
+111,70087,0,Ashmont,734.6213449215585,Savin Hill
+112,70088,1,Alewife,722.7941176470588,Savin Hill
+113,70089,0,Ashmont,752.0140769865541,Fields Corner
+114,70090,1,Alewife,750.0708113224831,Fields Corner
+115,70091,0,Ashmont,753.6406392550414,Shawmut
+116,70092,1,Alewife,751.6220094210983,Shawmut
+117,70093,0,Ashmont,1171.6842105263158,
+118,70094,1,Alewife,776.1712501950991,
+119,70095,0,Braintree,699.1203663049614,JFK/UMass
+120,70096,1,Alewife,705.0041528529052,JFK/UMass
+121,70097,0,Braintree,703.9754625905068,North Quincy
+122,70098,1,Alewife,706.7733174835406,North Quincy
+123,70099,0,Braintree,681.6300450084852,Wollaston
+124,70100,1,Alewife,680.9438640376692,Wollaston
+125,70101,0,Braintree,706.9567148983433,Quincy Center
+126,70102,1,Alewife,705.9621325666045,Quincy Center
+127,70103,0,Braintree,708.9476708456244,Quincy Adams
+128,70104,1,Alewife,708.1349599461872,Quincy Adams
+129,70105,0,Braintree,1152.192842942346,
+130,70105,1,Alewife,729.065049578502,
+131,70106,1,Government Center,703.6666666666666,
+132,70106,1,North Station,1077.0,
+133,70106,1,Park St,626.4356875820956,
+134,70107,0,Boston College,861.6,Boston College
+135,70110,1,Government Center,305.0,South Street
+136,70110,1,Park St,520.0664744626491,South Street
+137,70111,0,Boston College,479.8627280809449,South Street
+138,70112,1,North Station,304.0,Chestnut Hill Avenue
+139,70112,1,Park St,524.3786770498076,Chestnut Hill Avenue
+140,70113,0,Boston College,500.8757164271228,Chestnut Hill Avenue
+141,70114,1,North Station,152.0,Chiswick Road
+142,70114,1,Park St,521.788218384351,Chiswick Road
+143,70115,0,Boston College,500.7644670946676,Chiswick Road
+144,70116,1,Park St,518.3357338743841,Sutherland Road
+145,70117,0,Boston College,501.7057111997708,Sutherland Road
+146,70120,1,North Station,787.0,Washington Street
+147,70120,1,Park St,514.2728095942753,Washington Street
+148,70121,0,Boston College,501.9563240714176,Washington Street
+149,70124,1,North Station,649.6666666666666,Warren Street
+150,70124,1,Park St,509.1140820753464,Warren Street
+151,70125,0,Boston College,501.4879708980539,Warren Street
+152,70126,1,Park St,509.18133120835824,Allston Street
+153,70127,0,Boston College,502.19251468256624,Allston Street
+154,70128,1,Lechmere,839.0,Griggs Street
+155,70128,1,North Station,732.0,Griggs Street
+156,70128,1,Park St,508.7208901460741,Griggs Street
+157,70129,0,Boston College,503.0072758112753,Griggs Street
+158,70130,1,Government Center,484.0,Harvard Avenue
+159,70130,1,Park St,506.1430396475771,Harvard Avenue
+160,70131,0,Boston College,502.58635593975583,Harvard Avenue
+161,70134,1,Government Center,366.0,Packard's Corner
+162,70134,1,North Station,444.5,Packard's Corner
+163,70134,1,Park St,505.2811109642747,Packard's Corner
+164,70135,0,Boston College,503.6531777723248,Packard's Corner
+165,70136,1,Park St,509.5434820156311,
+166,70137,0,Boston College,511.9154171472511,
+167,70138,1,Park St,512.062893081761,
+168,70139,0,Boston College,512.4395686525731,
+169,70140,1,Park St,511.5476477428904,
+170,70141,0,Boston College,510.5209363526391,
+171,70142,1,North Station,96.0,
+172,70142,1,Park St,511.1446328873907,
+173,70143,0,Boston College,500.54424338009466,
+174,70144,1,North Station,249.0,Boston University Central
+175,70144,1,Park St,510.5338711715887,Boston University Central
+176,70145,0,Boston College,468.1783738831084,Boston University Central
+177,70146,1,North Station,153.0,Boston University East
+178,70146,1,Park St,510.43363279767175,Boston University East
+179,70147,0,Boston College,467.92417308694894,Boston University East
+180,70148,1,Government Center,436.5,Blandford Street
+181,70148,1,Lechmere,805.0,Blandford Street
+182,70148,1,North Station,150.58333333333334,Blandford Street
+183,70148,1,Park St,504.0224536751716,Blandford Street
+184,70149,0,Boston College,466.14939355280944,Blandford Street
+185,70150,1,Government Center,226.71124170105867,Kenmore
+186,70150,1,North Station,264.30176456930576,Kenmore
+187,70150,1,Park St,175.89809290953545,Kenmore
+188,70151,0,Boston College,485.46060546297207,Kenmore
+189,70151,0,Cleveland Circle,490.93549805438914,Kenmore
+190,70151,0,Riverside,446.3348545613793,Kenmore
+191,70152,1,Government Center,161.93751920291444,Hynes Convention Center
+192,70152,1,Lechmere,88.25,Hynes Convention Center
+193,70152,1,North Station,178.9721849266022,Hynes Convention Center
+194,70152,1,Park St,180.68333205726967,Hynes Convention Center
+195,70153,0,Boston College,460.8716614706408,Hynes Convention Center
+196,70153,0,Cleveland Circle,505.70342500114015,Hynes Convention Center
+197,70153,0,Riverside,475.11182442875145,Hynes Convention Center
+198,70154,1,Government Center,120.78789424655103,Copley
+199,70154,1,Lechmere,139.4655352900914,Copley
+200,70154,1,North Station,134.302421789396,Copley
+201,70154,1,Park St,132.02495957386094,Copley
+202,70155,0,Boston College,471.4570807903176,Copley
+203,70155,0,Cleveland Circle,522.0340996615707,Copley
+204,70155,0,Heath St,502.7400810237284,Copley
+205,70155,0,Riverside,500.69684044986656,Copley
+206,70156,1,Government Center,118.76452531855222,Arlington
+207,70156,1,Lechmere,141.64513938813005,Arlington
+208,70156,1,North Station,135.31137296911265,Arlington
+209,70156,1,Park St,130.19104749610844,Arlington
+210,70157,0,Boston College,470.8023726016093,Arlington
+211,70157,0,Cleveland Circle,521.372691584009,Arlington
+212,70157,0,Heath St,501.44304121512073,Arlington
+213,70157,0,Riverside,507.1620827456512,Arlington
+214,70158,1,Government Center,118.69080718478308,Boylston
+215,70158,1,Lechmere,140.13093416529222,Boylston
+216,70158,1,North Station,135.30305597039876,Boylston
+217,70158,1,Park St,130.81242172378458,Boylston
+218,70159,0,Boston College,471.54284237726097,Boylston
+219,70159,0,Cleveland Circle,520.2505274873055,Boylston
+220,70159,0,Heath St,500.96333908156095,Boylston
+221,70159,0,Riverside,506.6578013767826,Boylston
+222,70160,1,Government Center,661.9112505141917,
+223,70160,1,North Station,1138.0,
+224,70161,0,Riverside,1084.7142857142858,
+225,70162,1,Government Center,548.4581423914584,Woodland
+226,70163,0,Riverside,554.2109108135737,Woodland
+227,70164,1,Government Center,547.67472001127,Waban
+228,70164,1,Park St,411.0,Waban
+229,70165,0,Riverside,552.2713145528232,Waban
+230,70166,1,Government Center,547.1591170599977,Eliot
+231,70166,1,North Station,729.0,Eliot
+232,70167,0,Riverside,547.3542965573326,Eliot
+233,70168,1,Government Center,539.6913629755877,Newton Highlands
+234,70168,1,North Station,435.0,Newton Highlands
+235,70169,0,Riverside,536.2324211278022,Newton Highlands
+236,70170,1,Government Center,536.542916677127,Newton Centre
+237,70171,0,Riverside,534.0531204421586,Newton Centre
+238,70172,1,Government Center,565.8179121382918,Chestnut Hill
+239,70172,1,Lechmere,342.0,Chestnut Hill
+240,70172,1,Park St,577.5,Chestnut Hill
+241,70173,0,Riverside,503.47639172252985,Chestnut Hill
+242,70174,1,Government Center,550.9721412652151,Reservoir
+243,70174,1,Lechmere,535.0,Reservoir
+244,70174,1,North Station,472.5,Reservoir
+245,70175,0,Riverside,510.1041851955378,Reservoir
+246,70176,1,Government Center,511.45015831134566,Beaconsfield
+247,70176,1,North Station,537.3333333333334,Beaconsfield
+248,70176,1,Park St,669.0,Beaconsfield
+249,70177,0,Riverside,508.0109222668265,Beaconsfield
+250,70178,1,Government Center,506.6653987442357,Brookline Hills
+251,70178,1,North Station,97.0,Brookline Hills
+252,70178,1,Park St,473.0,Brookline Hills
+253,70179,0,Riverside,509.49964789650767,Brookline Hills
+254,70180,1,Government Center,499.6002664548692,Brookline Village
+255,70180,1,Lechmere,932.0,Brookline Village
+256,70180,1,North Station,2174.0,Brookline Village
+257,70180,1,Park St,195.0,Brookline Village
+258,70181,0,Riverside,463.3404699861493,Brookline Village
+259,70182,1,Government Center,475.3198895429112,Longwood
+260,70183,0,Riverside,450.57867404831626,Longwood
+261,70186,1,Government Center,474.8020913461539,Fenway
+262,70186,1,Lechmere,481.6666666666667,Fenway
+263,70186,1,North Station,195.92857142857144,Fenway
+264,70186,1,Park St,462.5,Fenway
+265,70187,0,Riverside,448.4877504563997,Fenway
+266,70196,0,Boston College,469.6663729464058,Park Street
+267,70197,0,Cleveland Circle,516.1706012581925,Park Street
+268,70198,0,Riverside,511.1300500192382,Park Street
+269,70199,0,Heath St,503.12275406648166,Park Street
+270,70200,1,Government Center,153.06129130322944,Park Street
+271,70200,1,Lechmere,185.4732661529342,Park Street
+272,70200,1,North Station,176.58974587804823,Park Street
+273,70200,1,Park St,179.66377795994848,Park Street
+274,70201,1,Ashmont,151.0,Government Center
+275,70201,1,Government Center,227.19914232109355,Government Center
+276,70201,1,Lechmere,259.6053305897426,Government Center
+277,70201,1,North Station,245.99227825768165,Government Center
+278,70201,1,Park St,266.01506024096386,Government Center
+279,70202,0,Cleveland Circle,528.0201881111863,Government Center
+280,70202,0,Heath St,500.7294028083234,Government Center
+281,70202,0,Riverside,557.7505201831044,Government Center
+282,70203,1,Government Center,249.15270935960592,Haymarket
+283,70203,1,Lechmere,264.6469848288481,Haymarket
+284,70203,1,North Station,252.86829822737056,Haymarket
+285,70203,1,Park St,299.5116861435726,Haymarket
+286,70204,0,Cleveland Circle,564.5428889163475,Haymarket
+287,70204,0,Heath St,487.445819867065,Haymarket
+288,70204,0,Riverside,1087.8103448275865,Haymarket
+289,70205,1,Government Center,317.0159786950732,North Station
+290,70205,1,Lechmere,465.4157271108899,North Station
+291,70205,1,North Station,461.0821596244131,North Station
+292,70205,1,Park St,390.3485714285714,North Station
+293,70206,0,Cleveland Circle,579.0778833660289,North Station
+294,70206,0,Heath St,491.3563510111264,North Station
+295,70206,0,Riverside,1115.6582278481012,North Station
+296,70207,1,Government Center,356.0206022187005,Science Park/West End
+297,70207,1,Lechmere,479.5282071172307,Science Park/West End
+298,70207,1,North Station,507.655013799448,Science Park/West End
+299,70207,1,Park St,528.7073170731708,Science Park/West End
+300,70208,0,Cleveland Circle,613.7980295566502,Science Park/West End
+301,70208,0,Heath St,514.0750311135487,Science Park/West End
+302,70208,0,Riverside,1208.887640449438,Science Park/West End
+303,70209,1,Government Center,866.3333333333334,
+304,70209,1,Lechmere,1105.1774193548388,
+305,70209,1,North Station,1001.2777777777778,
+306,70209,1,Park St,948.0,
+307,70210,0,Cleveland Circle,617.3271028037383,
+308,70210,0,Heath St,509.76274870423,
+309,70210,0,Riverside,1222.9888888888888,
+310,70211,0,Cleveland Circle,493.8297597971718,Saint Mary's Street
+311,70212,1,Government Center,113.5,Saint Mary's Street
+312,70212,1,North Station,575.6838534248349,Saint Mary's Street
+313,70212,1,Park St,324.3333333333333,Saint Mary's Street
+314,70213,0,Cleveland Circle,492.3485989955062,Hawes Street
+315,70214,1,Government Center,365.3333333333333,Hawes Street
+316,70214,1,North Station,563.2047208692394,Hawes Street
+317,70215,0,Cleveland Circle,490.5935604807586,Kent Street
+318,70216,1,Government Center,586.1428571428571,Kent Street
+319,70216,1,North Station,558.0467257508617,Kent Street
+320,70217,0,Cleveland Circle,499.5037227561933,Saint Paul Street
+321,70218,1,Government Center,535.3333333333334,Saint Paul Street
+322,70218,1,Lechmere,446.0,Saint Paul Street
+323,70218,1,North Station,555.3516268130145,Saint Paul Street
+324,70219,0,Cleveland Circle,525.208788339189,Coolidge Corner
+325,70220,1,Government Center,970.25,Coolidge Corner
+326,70220,1,North Station,555.9387223587223,Coolidge Corner
+327,70220,1,Park St,204.0,Coolidge Corner
+328,70223,0,Cleveland Circle,535.2827295333756,Summit Avenue
+329,70224,1,Government Center,866.75,Summit Avenue
+330,70224,1,North Station,557.1756512703793,Summit Avenue
+331,70225,0,Cleveland Circle,536.9744537157119,Brandon Hall
+332,70226,1,Lechmere,562.0,Brandon Hall
+333,70226,1,North Station,557.1564546825181,Brandon Hall
+334,70227,0,Cleveland Circle,535.9916572882516,Fairbanks Street
+335,70228,1,Government Center,80.0,Fairbanks Street
+336,70228,1,North Station,555.212179737923,Fairbanks Street
+337,70229,0,Cleveland Circle,530.8672747400847,Washington Square
+338,70230,1,Government Center,716.7,Washington Square
+339,70230,1,North Station,546.1020697612923,Washington Square
+340,70231,0,Cleveland Circle,527.7101947308133,Tappan Street
+341,70232,1,Government Center,577.0,Tappan Street
+342,70232,1,North Station,548.6794442828048,Tappan Street
+343,70232,1,Park St,876.0,Tappan Street
+344,70233,0,Cleveland Circle,525.1832071901608,Dean Road
+345,70234,1,Government Center,617.5,Dean Road
+346,70234,1,North Station,548.998713592233,Dean Road
+347,70235,0,Cleveland Circle,524.8778602496218,Englewood Avenue
+348,70236,1,Government Center,1029.0,Englewood Avenue
+349,70236,1,Lechmere,132.0,Englewood Avenue
+350,70236,1,North Station,651.9554380186229,Englewood Avenue
+351,70237,0,Cleveland Circle,1072.875,Cleveland Circle
+352,70238,1,Government Center,839.1818181818181,
+353,70238,1,North Station,741.3510960397239,
+354,70239,0,Heath St,505.7826378448661,Prudential
+355,70240,1,Government Center,500.0,Prudential
+356,70240,1,Lechmere,509.0205718270572,Prudential
+357,70241,0,Heath St,508.2992985190959,Symphony
+358,70242,1,Government Center,322.0,Symphony
+359,70242,1,Lechmere,532.3970252462652,Symphony
+360,70242,1,North Station,503.0,Symphony
+361,70243,0,Heath St,508.4570970328789,Northeastern University
+362,70244,1,Lechmere,556.7144492198449,Northeastern University
+363,70244,1,Park St,710.0,Northeastern University
+364,70245,0,Heath St,507.3234425018469,Museum of Fine Arts
+365,70246,1,Lechmere,560.6620520418558,Museum of Fine Arts
+366,70246,1,Park St,581.5,Museum of Fine Arts
+367,70247,0,Heath St,543.369652981535,Longwood Medical Area
+368,70248,1,Government Center,390.0,Longwood Medical Area
+369,70248,1,Lechmere,566.9418475826792,Longwood Medical Area
+370,70249,0,Heath St,560.9562941095069,Brigham Circle
+371,70250,1,Lechmere,578.073739708219,Brigham Circle
+372,70250,1,Park St,255.0,Brigham Circle
+373,70251,0,Heath St,558.9995628666743,Fenwood Road
+374,70252,1,Lechmere,593.0197928825093,Fenwood Road
+375,70253,0,Heath St,561.6842153853255,Mission Park
+376,70254,1,Government Center,677.0,Mission Park
+377,70254,1,Lechmere,585.6108025142523,Mission Park
+378,70255,0,Heath St,572.4930664359376,Riverway
+379,70256,1,Lechmere,587.9788692596869,Riverway
+380,70257,0,Heath St,573.3370506890803,Back of the Hill
+381,70258,1,Lechmere,589.4913926856299,Back of the Hill
+382,70260,0,Heath St,1051.90625,
+383,70260,1,Government Center,564.5,
+384,70260,1,Lechmere,614.3225285319714,
+385,70260,1,Park St,595.0,
+386,70261,0,Mattapan,694.4790603517355,
+387,70263,0,Mattapan,568.7301776717051,Cedar Grove
+388,70264,1,Ashmont,578.3426089272043,Cedar Grove
+389,70265,0,Mattapan,561.3944762216048,Butler
+390,70266,1,Ashmont,552.5565012562814,Butler
+391,70267,0,Mattapan,559.1383379933676,Milton
+392,70268,1,Ashmont,548.0864656951654,Milton
+393,70269,0,Mattapan,556.396509936985,Central Avenue
+394,70270,1,Ashmont,547.0865651185247,Central Avenue
+395,70271,0,Mattapan,555.1571842783505,Valley Road
+396,70272,1,Ashmont,548.497150154172,Valley Road
+397,70273,0,Mattapan,555.3112057286627,Capen Street
+398,70274,1,Ashmont,554.5136386703882,Capen Street
+399,70275,0,Mattapan,2.0,
+400,70278,0,Forest Hills,524.0052302134095,Assembly
+401,70279,1,Oak Grove,508.2005174644243,Assembly
+402,71150,1,Government Center,535.0,Kenmore
+403,71150,1,Lechmere,334.6,Kenmore
+404,71150,1,North Station,248.8,Kenmore
+405,71150,1,Park St,465.0583985262805,Kenmore
+406,71151,0,Boston College,461.4002805315836,Kenmore
+407,71199,1,Government Center,1476.064449064449,Park Street
+408,71199,1,Lechmere,1042.3333333333333,Park Street
+409,71199,1,North Station,1047.7179487179487,Park Street
+410,71199,1,Park St,1317.0064516129032,Park Street
