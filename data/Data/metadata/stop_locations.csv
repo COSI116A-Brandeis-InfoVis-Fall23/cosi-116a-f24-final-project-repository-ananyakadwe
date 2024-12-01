@@ -1,0 +1,131 @@
+stop_name,x,y,line
+Alewife,294,55,red
+Davis,320,83,red
+Porter,353,114,red
+Harvard,377,139,red
+Central,401,163,red
+Kendall/MIT,426,188,red
+Charles/MGH,455,218,red
+Park Street,475,239,red
+Downtown Crossing,504,266,red
+South Station,533,297,red
+Broadway,551,353,red
+Andrew,551,382,red
+JFK/UMass,551,411,red
+Savin Hill,524,479,red
+Fields Corner,524,493,red
+Shawmut,524,505,red
+Ashmont,524,517,red
+Cedar Grove,524,539,red
+Butler,518,554,red
+Milton,504,554,red
+Central Avenue,488,554,red
+Valley Road,473,554,red
+Capen Street,458,554,red
+Mattapan,442,554,red
+North Quincy,598,493,red
+Wollaston,617,513,red
+Quincy Center,636,530,red
+Quincy Adams,650,551,red
+Braintree,650,579,red
+Medford/Tufts,399,40,green
+Ball Square,414,55,green
+Magoun Square,430,71,green
+Gilman Square,446,86,green
+East Somerville,462,103,green
+Lechmere,494,135,green
+Science Park/West End,509,149,green
+North Station,518,168,green
+Haymarket,518,193,green
+Government Center,500,213,green
+Park Street,475,237,green
+Boylston,443,266,green
+Arlington,414,266,green
+Copley,385,266,green
+Hynes Convention Center,356,266,green
+Kenmore,325,266,green
+Blandford Street,298,248,green
+Boston University East,286,236,
+Boston University Central,274,224,green
+Amory Street,263,212,green
+Babcock Street,251,201,green
+Packard's Corner,239,188,green
+Harvard Avenue,221,183,green
+Griggs Street,204,188,green
+Allston Street,192,198,green
+Warren Street,182,208,green
+Washington Street,174,218,green
+Sutherland Road,163,228,green
+Chiswick Road,153,238,green
+Chestnut Hill Avenue,143,248,green
+South Street,133,258,green
+Boston College,116,267,green
+Saint Mary's Street,284,256,green
+Hawes Street,275,247,green
+Kent Street,258,237,green
+Saint Paul Street,240,248,green
+Coolidge Corner,231,256,green
+Summit Avenue,221,266,green
+Brandon Hall,210,277,green
+Fairbanks Street,200,288,green
+Washington Square,190,300,green
+Tappan Street,179,310,green
+Dean Road,169,319,green
+Englewood Avenue,158,330,green
+Cleveland Circle,140,339,green
+Fenway,302,284,green
+Longwood,291,295,green
+Brookline Village,280,306,green
+Brookline Hills,270,316,green
+Beaconsfield,259,327,green
+Reservoir,250,337,green
+Chestnut Hill,239,348,green
+Newton Centre,228,358,green
+Newton Highlands,217,369,green
+Eliot,207,379,green
+Waban,196,390,green
+Woodland,185,400,green
+Riverside,168,409,green
+Prudential,366,298,green
+Symphony,366,320,green
+Northeastern University,358,330,green
+Museum of Fine Arts,350,338,green
+Longwood Medical Area,340,348,green
+Brigham Circle,331,356,green
+Fenwood Road,322,365,green
+Mission Park,313,374,green
+Riverway,304,384,green
+Back of the Hill,295,392,green
+Heath Street,286,402,green
+Oak Grove,526,19,orange
+Malden Center,526,38,orange
+Wellington,526,57,orange
+Assembly,526,76,orange
+Sullivan Square,526,94,orange
+Community College,526,113,orange
+North Station,526,167,orange
+Haymarket,526,194,orange
+State,526,233,orange
+Downtown Crossing,505,265,orange
+Chinatown,475,295,orange
+Tufts Medical Center,444,327,orange
+Back Bay,425,345,orange
+Massachusetts Avenue,408,362,orange
+Ruggles,391,380,orange
+Roxbury Crossing,373,398,orange
+Jackson Square,351,419,orange
+Stony Brook,328,442,orange
+Green Street,306,464,orange
+Forest Hills,285,487,orange
+Bowdoin,482,195,blue
+Government Center,500,212,blue
+State,527,233,blue
+Aquarium,554,211,blue
+Maverick,590,174,blue
+Airport,608,155,blue
+Wood Island,623,141,blue
+Orient Heights,641,123,blue
+Suffolk Downs,660,104,blue
+Beachmont,678,86,blue
+Revere Beach,698,66,blue
+Wonderland,718,45,blue
