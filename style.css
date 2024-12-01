@@ -77,3 +77,45 @@ h1, h2, h3 {
 		box-shadow:4px 4px 10px rgba(0,0,0,0.8);
 	}
 }
+
+/* Container for everything */
+#container {
+    width: 90%; /* Adjust as needed */
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+/* Responsive chart container */
+#chart-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 66.67%; /* Aspect ratio: 600 / 400 = 3 / 2 = 66.67% */
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+}
+
+#chart {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Slider container */
+#slider-container {
+    margin-top: 10px;
+    text-align: center;
+    z-index: 10; /* Ensure it appears above the SVG */
+}
+
+#year-slider {
+    width: 300px;
+    margin-top: 10px;
+}
+
+#year-label {
+    margin-top: 5px;
+    font-size: 16px;
+    color: #333;
+}

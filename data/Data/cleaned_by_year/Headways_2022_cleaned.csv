@@ -1,0 +1,407 @@
+,stop_id,direction_id,destination,headway_time_sec,stop_name,stop_desc,line
+0,70001,0,Forest Hills,547.0,Forest Hills,Forest Hills - Orange Line,orange
+1,70001,1,Oak Grove,593.277429672548,Forest Hills,Forest Hills - Orange Line,orange
+2,70002,0,Forest Hills,589.6464889786827,Green Street,Green Street - Orange Line - Forest Hills,orange
+3,70003,1,Oak Grove,588.7292684194118,Green Street,Green Street - Orange Line - Oak Grove,orange
+4,70004,0,Forest Hills,590.2579267503559,Stony Brook,Stony Brook - Orange Line - Forest Hills,orange
+5,70005,1,Oak Grove,590.0411755623038,Stony Brook,Stony Brook - Orange Line - Oak Grove,orange
+6,70006,0,Forest Hills,591.1452454780361,Jackson Square,Jackson Square - Orange Line - Forest Hills,orange
+7,70007,1,Oak Grove,589.3324608673338,Jackson Square,Jackson Square - Orange Line - Oak Grove,orange
+8,70008,0,Forest Hills,591.4886548439557,Roxbury Crossing,Roxbury Crossing - Orange Line - Forest Hills,orange
+9,70009,1,Oak Grove,589.3798189139969,Roxbury Crossing,Roxbury Crossing - Orange Line - Oak Grove,orange
+10,70010,0,Forest Hills,588.2065515990256,Ruggles,Ruggles - Orange Line - Forest Hills,orange
+11,70011,1,Oak Grove,588.7363454021806,Ruggles,Ruggles - Orange Line - Oak Grove,orange
+12,70012,0,Forest Hills,585.9597956060488,Massachusetts Avenue,Massachusetts Avenue - Orange Line - Forest Hills,orange
+13,70013,1,Oak Grove,588.4667420872651,Massachusetts Avenue,Massachusetts Avenue - Orange Line - Oak Grove,orange
+14,70014,0,Forest Hills,581.0800305882973,Back Bay,Back Bay - Orange Line - Forest Hills,orange
+15,70015,1,Oak Grove,583.5514336542486,Back Bay,Back Bay - Orange Line - Oak Grove,orange
+16,70016,0,Forest Hills,579.1158025540016,Tufts Medical Center,Tufts Medical Center - Orange Line - Forest Hills,orange
+17,70017,1,Oak Grove,583.2624542124543,Tufts Medical Center,Tufts Medical Center - Orange Line - Oak Grove,orange
+18,70018,0,Forest Hills,579.3113626745662,Chinatown,Chinatown - Orange Line - Forest Hills,orange
+19,70019,1,Oak Grove,585.0569272435645,Chinatown,Chinatown - Orange Line - Oak Grove,orange
+20,70020,0,Forest Hills,579.0687248889828,Downtown Crossing,Downtown Crossing - Orange Line - Forest Hills,orange
+21,70021,1,Oak Grove,580.9343206356749,Downtown Crossing,Downtown Crossing - Orange Line - Oak Grove,orange
+22,70022,0,Forest Hills,581.8882152230971,State,State - Orange Line - Forest Hills,orange
+23,70023,1,Oak Grove,578.8893649660134,State,State - Orange Line - Oak Grove,orange
+24,70024,0,Forest Hills,584.533015356621,Haymarket,Haymarket - Orange Line - Forest Hills,orange
+25,70025,1,Oak Grove,581.5271897860978,Haymarket,Haymarket - Orange Line - Oak Grove,orange
+26,70026,0,Forest Hills,581.6278156102671,North Station,North Station - Orange Line - Forest Hills,orange
+27,70027,1,Oak Grove,578.9604340346698,North Station,North Station - Orange Line - Oak Grove,orange
+28,70028,0,Forest Hills,585.5814445763849,Community College,Community College - Orange Line - Forest Hills,orange
+29,70029,1,Oak Grove,579.0368128964059,Community College,Community College - Orange Line - Oak Grove,orange
+30,70030,0,Forest Hills,586.0415699024617,Sullivan Square,Sullivan Square - Orange Line - Forest Hills,orange
+31,70031,1,Oak Grove,582.8296323356731,Sullivan Square,Sullivan Square - Orange Line - Oak Grove,orange
+32,70032,0,Forest Hills,591.3922620582925,Wellington,Wellington - Orange Line - Forest Hills,orange
+33,70033,1,Oak Grove,590.7919279710635,Wellington,Wellington - Orange Line - Oak Grove,orange
+34,70034,0,Forest Hills,592.0007297557925,Malden Center,Malden Center - Orange Line - Forest Hills,orange
+35,70035,1,Oak Grove,588.3032703583062,Malden Center,Malden Center - Orange Line - Oak Grove,orange
+36,70036,0,Forest Hills,607.5928425467843,Oak Grove,Oak Grove - Orange Line,orange
+37,70036,1,Oak Grove,1097.1030405405406,Oak Grove,Oak Grove - Orange Line,orange
+38,70038,1,Wonderland,494.0627611566104,Bowdoin,Bowdoin - Blue Line - Wonderland,blue
+39,70039,0,Bowdoin,491.87348513439844,Government Center,Government Center - Blue Line - Bowdoin,blue
+40,70040,1,Wonderland,497.33422482239865,Government Center,Government Center - Blue Line - Wonderland,blue
+41,70041,0,Bowdoin,492.3326844583987,State,State - Blue Line - Bowdoin,blue
+42,70042,1,Wonderland,496.947064224012,State,State - Blue Line - Wonderland,blue
+43,70043,0,Bowdoin,490.9370399799264,Aquarium,Aquarium - Blue Line - Bowdoin,blue
+44,70044,1,Wonderland,496.36753170894525,Aquarium,Aquarium - Blue Line - Wonderland,blue
+45,70045,0,Bowdoin,490.90533757215763,Maverick,Maverick - Blue Line - Bowdoin,blue
+46,70046,1,Wonderland,494.814919203307,Maverick,Maverick - Blue Line - Wonderland,blue
+47,70047,0,Bowdoin,490.807067373961,Airport,Airport - Blue Line - Bowdoin,blue
+48,70048,1,Wonderland,494.0415065976282,Airport,Airport - Blue Line - Wonderland,blue
+49,70049,0,Bowdoin,492.1603990790484,Wood Island,Wood Island - Blue Line - Bowdoin,blue
+50,70050,1,Wonderland,495.05155735928605,Wood Island,Wood Island - Blue Line - Wonderland,blue
+51,70051,0,Bowdoin,489.3908534581896,Orient Heights,Orient Heights - Blue Line - Bowdoin,blue
+52,70052,1,Wonderland,490.2002843250371,Orient Heights,Orient Heights - Blue Line - Wonderland,blue
+53,70053,0,Bowdoin,492.020375424488,Suffolk Downs,Suffolk Downs - Blue Line - Bowdoin,blue
+54,70054,1,Wonderland,489.6700178868809,Suffolk Downs,Suffolk Downs - Blue Line - Wonderland,blue
+55,70055,0,Bowdoin,492.35739546494693,Beachmont,Beachmont - Blue Line - Bowdoin,blue
+56,70056,1,Wonderland,488.7850753634513,Beachmont,Beachmont - Blue Line - Wonderland,blue
+57,70057,0,Bowdoin,492.10839116983027,Revere Beach,Revere Beach - Blue Line - Bowdoin,blue
+58,70058,1,Wonderland,488.2300442432349,Revere Beach,Revere Beach - Blue Line - Wonderland,blue
+59,70059,0,Bowdoin,494.02141583639224,Wonderland,Wonderland - Blue Line - Bowdoin,blue
+60,70060,1,Wonderland,665.5,Wonderland,Wonderland - Blue Line - Exit Only,blue
+61,70061,0,Ashmont,820.5640456862375,Alewife,Alewife - Red Line,red
+62,70061,0,Braintree,841.0529966703663,Alewife,Alewife - Red Line,red
+63,70061,0,Southbound,432.1567946783955,Alewife,Alewife - Red Line,red
+64,70061,1,Alewife,850.4236983842011,Alewife,Alewife - Red Line,red
+65,70063,0,Ashmont,813.8708175469028,Davis,Davis - Red Line - Ashmont/Braintree,red
+66,70063,0,Braintree,818.1003102769789,Davis,Davis - Red Line - Ashmont/Braintree,red
+67,70063,0,Southbound,425.57039576524085,Davis,Davis - Red Line - Ashmont/Braintree,red
+68,70064,1,Alewife,425.01205335619005,Davis,Davis - Red Line - Alewife,red
+69,70065,0,Ashmont,805.1361439062936,Porter,Porter - Red Line - Ashmont/Braintree,red
+70,70065,0,Braintree,812.6558704453441,Porter,Porter - Red Line - Ashmont/Braintree,red
+71,70065,0,Southbound,425.8342883499796,Porter,Porter - Red Line - Ashmont/Braintree,red
+72,70066,1,Alewife,424.9629722113224,Porter,Porter - Red Line - Alewife,red
+73,70067,0,Ashmont,814.9652103194326,Harvard,Harvard - Red Line - Ashmont/Braintree,red
+74,70067,0,Braintree,818.1389984373837,Harvard,Harvard - Red Line - Ashmont/Braintree,red
+75,70067,0,Southbound,423.9146522739338,Harvard,Harvard - Red Line - Ashmont/Braintree,red
+76,70068,1,Alewife,424.045852964708,Harvard,Harvard - Red Line - Alewife,red
+77,70069,0,Ashmont,828.0137537590659,Central,Central - Red Line - Ashmont/Braintree,red
+78,70069,0,Braintree,827.3206817269443,Central,Central - Red Line - Ashmont/Braintree,red
+79,70069,0,Southbound,429.0582791134616,Central,Central - Red Line - Ashmont/Braintree,red
+80,70070,1,Alewife,429.0024209701298,Central,Central - Red Line - Alewife,red
+81,70071,0,Ashmont,826.9582026244864,Kendall/MIT,Kendall/MIT - Red Line - Ashmont/Braintree,red
+82,70071,0,Braintree,826.0566085972024,Kendall/MIT,Kendall/MIT - Red Line - Ashmont/Braintree,red
+83,70071,0,Southbound,428.4807188515142,Kendall/MIT,Kendall/MIT - Red Line - Ashmont/Braintree,red
+84,70072,1,Alewife,427.27194968991705,Kendall/MIT,Kendall/MIT - Red Line - Alewife,red
+85,70073,0,Ashmont,828.5748647816719,Charles/MGH,Charles/MGH - Red Line - Ashmont/Braintree,red
+86,70073,0,Braintree,827.8730918452445,Charles/MGH,Charles/MGH - Red Line - Ashmont/Braintree,red
+87,70073,0,Southbound,429.42508456934684,Charles/MGH,Charles/MGH - Red Line - Ashmont/Braintree,red
+88,70074,1,Alewife,428.26852734679727,Charles/MGH,Charles/MGH - Red Line - Alewife,red
+89,70075,0,Ashmont,827.6400670134909,Park Street,Park Street - Red Line - Ashmont/Braintree,red
+90,70075,0,Braintree,828.2078321982322,Park Street,Park Street - Red Line - Ashmont/Braintree,red
+91,70075,0,Southbound,428.6494448891518,Park Street,Park Street - Red Line - Ashmont/Braintree,red
+92,70076,1,Alewife,428.2229580956674,Park Street,Park Street - Red Line - Alewife,red
+93,70077,0,Ashmont,830.3839629240994,Downtown Crossing,Downtown Crossing - Red Line - Ashmont/Braintree,red
+94,70077,0,Braintree,830.1221214738055,Downtown Crossing,Downtown Crossing - Red Line - Ashmont/Braintree,red
+95,70077,0,Southbound,429.65321744539676,Downtown Crossing,Downtown Crossing - Red Line - Ashmont/Braintree,red
+96,70078,1,Alewife,429.14801772708535,Downtown Crossing,Downtown Crossing - Red Line - Alewife,red
+97,70079,0,Ashmont,830.3735292831212,South Station,South Station - Red Line - Ashmont/Braintree,red
+98,70079,0,Braintree,830.3762244309997,South Station,South Station - Red Line - Ashmont/Braintree,red
+99,70079,0,Southbound,429.63090091647933,South Station,South Station - Red Line - Ashmont/Braintree,red
+100,70080,1,Alewife,429.0132079350396,South Station,South Station - Red Line - Alewife,red
+101,70081,0,Ashmont,831.2460390205578,Broadway,Broadway - Red Line - Ashmont/Braintree,red
+102,70081,0,Braintree,830.7743340532758,Broadway,Broadway - Red Line - Ashmont/Braintree,red
+103,70081,0,Southbound,424.13183504865924,Broadway,Broadway - Red Line - Ashmont/Braintree,red
+104,70082,1,Alewife,423.2883161809219,Broadway,Broadway - Red Line - Alewife,red
+105,70083,0,Ashmont,830.1362443122156,Andrew,Andrew - Red Line - Ashmont/Braintree,red
+106,70083,0,Braintree,829.8515743756786,Andrew,Andrew - Red Line - Ashmont/Braintree,red
+107,70083,0,Southbound,423.66913680926126,Andrew,Andrew - Red Line - Ashmont/Braintree,red
+108,70084,1,Alewife,423.4011401192579,Andrew,Andrew - Red Line - Alewife,red
+109,70085,0,Ashmont,841.9489977163156,JFK/UMass,JFK/UMass - Red Line - Ashmont,red
+110,70086,1,Alewife,840.4964445708597,JFK/UMass,JFK/UMass - Red Line - Alewife (from Ashmont),red
+111,70087,0,Ashmont,841.2034877613195,Savin Hill,Savin Hill - Red Line - Ashmont,red
+112,70088,1,Alewife,838.2258520279817,Savin Hill,Savin Hill - Red Line - Alewife,red
+113,70089,0,Ashmont,840.0699761604263,Fields Corner,Fields Corner - Red Line - Ashmont,red
+114,70090,1,Alewife,839.2690118986033,Fields Corner,Fields Corner - Red Line - Alewife,red
+115,70091,0,Ashmont,840.3205731544567,Shawmut,Shawmut - Red Line - Ashmont,red
+116,70092,1,Alewife,839.30678282514,Shawmut,Shawmut - Red Line - Alewife,red
+117,70093,0,Ashmont,943.5454545454545,Ashmont,Ashmont - Red Line - Exit Only,red
+118,70094,1,Alewife,845.4569260890847,Ashmont,Ashmont - Red Line - Alewife,red
+119,70095,0,Braintree,827.1768460084858,JFK/UMass,JFK/UMass - Red Line - Braintree,red
+120,70096,1,Alewife,827.5474714748556,JFK/UMass,JFK/UMass - Red Line - Alewife (from Braintree),red
+121,70097,0,Braintree,829.109216305243,North Quincy,North Quincy - Red Line - Braintree,red
+122,70098,1,Alewife,825.2051622569551,North Quincy,North Quincy - Red Line - Alewife,red
+123,70099,0,Braintree,828.0062247759764,Wollaston,Wollaston - Red Line - Braintree,red
+124,70100,1,Alewife,825.0831410343424,Wollaston,Wollaston - Red Line - Alewife,red
+125,70101,0,Braintree,828.4825440246196,Quincy Center,Quincy Center - Red Line - Braintree,red
+126,70102,1,Alewife,825.753483168921,Quincy Center,Quincy Center - Red Line - Alewife,red
+127,70103,0,Braintree,828.1845042454122,Quincy Adams,Quincy Adams - Red Line - Braintree,red
+128,70104,1,Alewife,825.9532726160538,Quincy Adams,Quincy Adams - Red Line - Alewife,red
+129,70105,0,Braintree,1397.0460251046024,Braintree,Braintree - Red Line,red
+130,70105,1,Alewife,845.3717867231638,Braintree,Braintree - Red Line,red
+131,70106,1,Government Center,373.0,Boston College,Boston College - Green Line - Park Street & North,green
+132,70106,1,Park St,547.2289039767217,Boston College,Boston College - Green Line - Park Street & North,green
+133,70110,1,Park St,549.7940135480393,South Street,South Street - Green Line - Park Street & North,green
+134,70111,0,Boston College,536.644644532821,South Street,South Street - Green Line - (B) Boston College,green
+135,70112,1,North Station,268.75,Chestnut Hill Avenue,Chestnut Hill Avenue - Green Line - Park Street & North,green
+136,70112,1,Park St,554.7538253309169,Chestnut Hill Avenue,Chestnut Hill Avenue - Green Line - Park Street & North,green
+137,70113,0,Boston College,555.7395020095163,Chestnut Hill Avenue,Chestnut Hill Avenue - Green Line - (B) Boston College,green
+138,70114,1,Government Center,459.0,Chiswick Road,Chiswick Road - Green Line - Park Street & North,green
+139,70114,1,Park St,554.286561898653,Chiswick Road,Chiswick Road - Green Line - Park Street & North,green
+140,70115,0,Boston College,555.1513045090134,Chiswick Road,Chiswick Road - Green Line - (B) Boston College,green
+141,70116,1,Park St,553.2500057214784,Sutherland Road,Sutherland Road - Green Line - Park Street & North,green
+142,70117,0,Boston College,551.0827679152337,Sutherland Road,Sutherland Road - Green Line - (B) Boston College,green
+143,70120,1,Government Center,551.0,Washington Street,Washington Street - Green Line - Park Street & North,green
+144,70120,1,Park St,552.4699949686685,Washington Street,Washington Street - Green Line - Park Street & North,green
+145,70121,0,Boston College,550.4250765235136,Washington Street,Washington Street - Green Line - (B) Boston College,green
+146,70124,1,Government Center,558.6666666666666,Warren Street,Warren Street - Green Line - Park Street & North,green
+147,70124,1,Park St,551.5674694669558,Warren Street,Warren Street - Green Line - Park Street & North,green
+148,70125,0,Boston College,551.2900905082386,Warren Street,Warren Street - Green Line - (B) Boston College,green
+149,70126,1,Government Center,570.0,Allston Street,Allston Street - Green Line - Park Street & North,green
+150,70126,1,Park St,551.7995515592468,Allston Street,Allston Street - Green Line - Park Street & North,green
+151,70127,0,Boston College,552.1991101223582,Allston Street,Allston Street - Green Line - (B) Boston College,green
+152,70128,1,Park St,551.7391662471972,Griggs Street,Griggs Street - Green Line - Park Street & North,green
+153,70129,0,Boston College,551.8485689184815,Griggs Street,Griggs Street - Green Line - (B) Boston College,green
+154,70130,1,Government Center,759.0,Harvard Avenue,Harvard Avenue - Green Line - Park Street & North,green
+155,70130,1,Park St,551.6001416236466,Harvard Avenue,Harvard Avenue - Green Line - Park Street & North,green
+156,70131,0,Boston College,552.2035081232234,Harvard Avenue,Harvard Avenue - Green Line - (B) Boston College,green
+157,70134,1,Lechmere,7.5,Packard's Corner,Packard's Corner - Green Line - Park Street & North,green
+158,70134,1,Park St,551.2946732063419,Packard's Corner,Packard's Corner - Green Line - Park Street & North,green
+159,70135,0,Boston College,552.6979104063612,Packard's Corner,Packard's Corner - Green Line - (B) Boston College,green
+160,70144,1,Government Center,546.0,Boston University Central,Boston University Central - Green Line - Park Street & North,green
+161,70144,1,Park St,552.119892436362,Boston University Central,Boston University Central - Green Line - Park Street & North,green
+162,70145,0,Boston College,543.6835645437347,Boston University Central,Boston University Central - Green Line - (B) Boston College,green
+163,70146,1,Park St,551.983114574788,Boston University East,Boston University East - Green Line - Park Street & North,green
+164,70147,0,Boston College,543.6861382799325,Boston University East,Boston University East - Green Line - (B) Boston College,green
+165,70148,1,Government Center,232.25,Blandford Street,Blandford Street - Green Line - Park Street & North,green
+166,70148,1,North Station,1553.0,Blandford Street,Blandford Street - Green Line - Park Street & North,green
+167,70148,1,Park St,551.0166424154238,Blandford Street,Blandford Street - Green Line - Park Street & North,green
+168,70149,0,Boston College,539.2472432843499,Blandford Street,Blandford Street - Green Line - (B) Boston College,green
+169,70150,1,Government Center,275.35305888381856,Kenmore,Kenmore - Green Line - Park Street & North,green
+170,70150,1,Lechmere,140.5,Kenmore,Kenmore - Green Line - Park Street & North,green
+171,70150,1,North Station,306.6095097200712,Kenmore,Kenmore - Green Line - Park Street & North,green
+172,70150,1,Park St,371.0,Kenmore,Kenmore - Green Line - Park Street & North,green
+173,70151,0,Cleveland Circle,534.8461918337111,Kenmore,"Kenmore - Green Line - (C) Cleveland Circle, (D) Riverside",green
+174,70151,0,Riverside,544.6680704625306,Kenmore,"Kenmore - Green Line - (C) Cleveland Circle, (D) Riverside",green
+175,70152,1,Government Center,188.5895111371058,Hynes Convention Center,Hynes Convention Center - Green Line - Park Street & North,green
+176,70152,1,Lechmere,162.2,Hynes Convention Center,Hynes Convention Center - Green Line - Park Street & North,green
+177,70152,1,North Station,199.16879133957386,Hynes Convention Center,Hynes Convention Center - Green Line - Park Street & North,green
+178,70152,1,Park St,196.0570202329859,Hynes Convention Center,Hynes Convention Center - Green Line - Park Street & North,green
+179,70153,0,Boston College,547.3281932724541,Hynes Convention Center,Hynes Convention Center - Green Line - Kenmore & West,green
+180,70153,0,Cleveland Circle,549.3943720447469,Hynes Convention Center,Hynes Convention Center - Green Line - Kenmore & West,green
+181,70153,0,Riverside,564.3679140888286,Hynes Convention Center,Hynes Convention Center - Green Line - Kenmore & West,green
+182,70154,1,Government Center,146.03679882165216,Copley,Copley - Green Line - Park Street & North,green
+183,70154,1,Lechmere,159.56967866634452,Copley,Copley - Green Line - Park Street & North,green
+184,70154,1,North Station,150.55194760268444,Copley,Copley - Green Line - Park Street & North,green
+185,70154,1,Park St,148.5621277655744,Copley,Copley - Green Line - Park Street & North,green
+186,70155,0,Boston College,547.5773137961706,Copley,"Copley - Green Line - Kenmore & West, (E) Heath Street",green
+187,70155,0,Cleveland Circle,553.6132915567282,Copley,"Copley - Green Line - Kenmore & West, (E) Heath Street",green
+188,70155,0,Heath St,587.7645617580197,Copley,"Copley - Green Line - Kenmore & West, (E) Heath Street",green
+189,70155,0,Riverside,570.0292184451063,Copley,"Copley - Green Line - Kenmore & West, (E) Heath Street",green
+190,70156,1,Government Center,146.3541890966037,Arlington,Arlington - Green Line - Park Street & North,green
+191,70156,1,Lechmere,159.64672941737163,Arlington,Arlington - Green Line - Park Street & North,green
+192,70156,1,North Station,149.7916889022947,Arlington,Arlington - Green Line - Park Street & North,green
+193,70156,1,Park St,147.92697086062796,Arlington,Arlington - Green Line - Park Street & North,green
+194,70157,0,Boston College,547.8630415004549,Arlington,Arlington - Green Line - Copley & West,green
+195,70157,0,Cleveland Circle,552.4694179546202,Arlington,Arlington - Green Line - Copley & West,green
+196,70157,0,Heath St,587.7318835107856,Arlington,Arlington - Green Line - Copley & West,green
+197,70157,0,Riverside,573.3559710034338,Arlington,Arlington - Green Line - Copley & West,green
+198,70158,1,Government Center,148.18185156173504,Boylston,Boylston - Green Line - Park Street & North,green
+199,70158,1,Lechmere,156.7467031659129,Boylston,Boylston - Green Line - Park Street & North,green
+200,70158,1,North Station,150.21667324800816,Boylston,Boylston - Green Line - Park Street & North,green
+201,70158,1,Park St,148.47123788874586,Boylston,Boylston - Green Line - Park Street & North,green
+202,70159,0,Boston College,546.7383038210625,Boylston,Boylston - Green Line - Copley & West,green
+203,70159,0,Cleveland Circle,554.8411584647987,Boylston,Boylston - Green Line - Copley & West,green
+204,70159,0,Heath St,587.4429315178214,Boylston,Boylston - Green Line - Copley & West,green
+205,70159,0,Riverside,572.7101544861875,Boylston,Boylston - Green Line - Copley & West,green
+206,70160,1,Government Center,585.9694414505801,Riverside,Riverside - Green Line - Park Street & North,green
+207,70162,1,Government Center,572.8071301700077,Woodland,Woodland - Green Line - Park Street & North,green
+208,70162,1,Lechmere,630.0,Woodland,Woodland - Green Line - Park Street & North,green
+209,70163,0,Riverside,571.822144391042,Woodland,Woodland - Green Line - (D) Riverside,green
+210,70164,1,Government Center,571.4756897818542,Waban,Waban - Green Line - Park Street & North,green
+211,70165,0,Riverside,578.2493523316062,Waban,Waban - Green Line - (D) Riverside,green
+212,70166,1,Government Center,571.898955587102,Eliot,Eliot - Green Line - Park Street & North,green
+213,70166,1,Park St,459.0,Eliot,Eliot - Green Line - Park Street & North,green
+214,70167,0,Riverside,580.0309128253126,Eliot,Eliot - Green Line - (D) Riverside,green
+215,70168,1,Government Center,572.8980817474596,Newton Highlands,Newton Highlands - Green Line - Park Street & North,green
+216,70169,0,Riverside,578.8351183323755,Newton Highlands,Newton Highlands - Green Line - (D) Riverside,green
+217,70170,1,Government Center,573.7689859830787,Newton Centre,Newton Centre - Green Line - Park Street & North,green
+218,70170,1,North Station,404.0,Newton Centre,Newton Centre - Green Line - Park Street & North,green
+219,70171,0,Riverside,579.8237864956425,Newton Centre,Newton Centre - Green Line - (D) Riverside,green
+220,70172,1,Government Center,575.1920447640267,Chestnut Hill,Chestnut Hill - Green Line - Park Street & North,green
+221,70172,1,North Station,365.0,Chestnut Hill,Chestnut Hill - Green Line - Park Street & North,green
+222,70173,0,Riverside,568.6033143843265,Chestnut Hill,Chestnut Hill - Green Line - (D) Riverside,green
+223,70174,1,Government Center,577.9787348242811,Reservoir,Reservoir - Green Line - Park Street & North,green
+224,70174,1,North Station,333.625,Reservoir,Reservoir - Green Line - Park Street & North,green
+225,70174,1,Park St,334.0,Reservoir,Reservoir - Green Line - Park Street & North,green
+226,70175,0,Riverside,583.8119360291249,Reservoir,Reservoir - Green Line - (D) Riverside,green
+227,70176,1,Government Center,533.027654654076,Beaconsfield,Beaconsfield - Green Line - Park Street & North,green
+228,70176,1,North Station,216.5,Beaconsfield,Beaconsfield - Green Line - Park Street & North,green
+229,70177,0,Riverside,562.5179490970015,Beaconsfield,Beaconsfield - Green Line - (D) Riverside,green
+230,70178,1,Government Center,508.1399501190341,Brookline Hills,Brookline Hills - Green Line - Park Street & North,green
+231,70179,0,Riverside,553.9520043965439,Brookline Hills,Brookline Hills - Green Line - (D) Riverside,green
+232,70180,1,Government Center,512.0051333303048,Brookline Village,Brookline Village - Green Line - Park Street & North,green
+233,70181,0,Riverside,552.8731713185756,Brookline Village,Brookline Village - Green Line - (D) Riverside,green
+234,70182,1,Government Center,502.09745535714285,Longwood,Longwood - Green Line - Park Street & North,green
+235,70182,1,North Station,207.5,Longwood,Longwood - Green Line - Park Street & North,green
+236,70183,0,Riverside,549.0883404864092,Longwood,Longwood - Green Line - (D) Riverside,green
+237,70186,1,Government Center,504.0455526576131,Fenway,Fenway - Green Line - Park Street & North,green
+238,70186,1,Lechmere,590.0,Fenway,Fenway - Green Line - Park Street & North,green
+239,70186,1,North Station,195.8235294117647,Fenway,Fenway - Green Line - Park Street & North,green
+240,70187,0,Riverside,555.1442123859539,Fenway,Fenway - Green Line - (D) Riverside,green
+241,70196,0,Boston College,542.0778896772717,Park Street,Park Street - Green Line - (B) Boston College,green
+242,70197,0,Cleveland Circle,555.6544829955342,Park Street,Park Street - Green Line - (C) Cleveland Circle,green
+243,70198,0,Riverside,566.923230060968,Park Street,Park Street - Green Line - (D) Riverside,green
+244,70199,0,Heath St,585.5162604601235,Park Street,Park Street - Green Line - (E) Heath Street,green
+245,70200,1,Government Center,157.6842514581983,Park Street,Park Street - Green Line - Government Center & North,green
+246,70200,1,Lechmere,171.9735342019544,Park Street,Park Street - Green Line - Government Center & North,green
+247,70200,1,North Station,158.69883384781224,Park Street,Park Street - Green Line - Government Center & North,green
+248,70200,1,Park St,151.30191131498472,Park Street,Park Street - Green Line - Government Center & North,green
+249,70201,1,Government Center,297.1643374575293,Government Center,Government Center - Green Line - North Station & North,green
+250,70201,1,Lechmere,330.0183133313467,Government Center,Government Center - Green Line - North Station & North,green
+251,70201,1,North Station,302.6104797979798,Government Center,Government Center - Green Line - North Station & North,green
+252,70201,1,Park St,291.6017094017094,Government Center,Government Center - Green Line - North Station & North,green
+253,70202,0,Boston College,593.9390554174587,Government Center,Government Center - Green Line - Copley & West,green
+254,70202,0,Cleveland Circle,599.4533913376563,Government Center,Government Center - Green Line - Copley & West,green
+255,70202,0,Heath St,569.9558212058212,Government Center,Government Center - Green Line - Copley & West,green
+256,70202,0,Riverside,596.7059065707855,Government Center,Government Center - Green Line - Copley & West,green
+257,70203,1,Government Center,303.83659090139224,Haymarket,Haymarket - Green Line - North Station & North,green
+258,70203,1,Lechmere,331.124227865477,Haymarket,Haymarket - Green Line - North Station & North,green
+259,70203,1,North Station,303.79796048438493,Haymarket,Haymarket - Green Line - North Station & North,green
+260,70203,1,Park St,305.49906890130353,Haymarket,Haymarket - Green Line - North Station & North,green
+261,70204,0,Cleveland Circle,1338.421052631579,Haymarket,Haymarket - Green Line - Copley & West,green
+262,70204,0,Heath St,553.4108852013366,Haymarket,Haymarket - Green Line - Copley & West,green
+263,70204,0,Riverside,642.1132333382592,Haymarket,Haymarket - Green Line - Copley & West,green
+264,70205,1,Government Center,352.8881692002644,North Station,North Station - Green Line - Lechmere & North,green
+265,70205,1,Lechmere,493.859222553938,North Station,North Station - Green Line - Lechmere & North,green
+266,70205,1,North Station,484.5135135135135,North Station,North Station - Green Line - Lechmere & North,green
+267,70205,1,Park St,475.8545454545455,North Station,North Station - Green Line - Lechmere & North,green
+268,70206,0,Cleveland Circle,1368.1868131868132,North Station,North Station - Green Line - Copley & West,green
+269,70206,0,Heath St,559.8957122491502,North Station,North Station - Green Line - Copley & West,green
+270,70206,0,Riverside,656.4476391083026,North Station,North Station - Green Line - Copley & West,green
+271,70207,1,Government Center,361.19287874621944,Science Park/West End,Science Park/West End - Green Line - Lechmere & North,green
+272,70207,1,Lechmere,503.54463303473204,Science Park/West End,Science Park/West End - Green Line - Lechmere & North,green
+273,70207,1,North Station,521.6590584878745,Science Park/West End,Science Park/West End - Green Line - Lechmere & North,green
+274,70207,1,Park St,492.92,Science Park/West End,Science Park/West End - Green Line - Lechmere & North,green
+275,70208,0,Cleveland Circle,1354.258064516129,Science Park/West End,Science Park/West End - Green Line - Copley & West,green
+276,70208,0,Heath St,591.4713343480466,Science Park/West End,Science Park/West End - Green Line - Copley & West,green
+277,70208,0,Riverside,766.0892215568862,Science Park/West End,Science Park/West End - Green Line - Copley & West,green
+278,70211,0,Cleveland Circle,533.7625179776524,Saint Mary's Street,Saint Mary's Street - Green Line - (C) Cleveland Circle,green
+279,70212,1,Government Center,182.14285714285714,Saint Mary's Street,Saint Mary's Street - Green Line - Park Street & North,green
+280,70212,1,North Station,545.5196293366482,Saint Mary's Street,Saint Mary's Street - Green Line - Park Street & North,green
+281,70212,1,Park St,348.5,Saint Mary's Street,Saint Mary's Street - Green Line - Park Street & North,green
+282,70213,0,Cleveland Circle,533.9537727474478,Hawes Street,Hawes Street - Green Line - (C) Cleveland Circle,green
+283,70214,1,Lechmere,866.0,Hawes Street,Hawes Street - Green Line - Park Street & North,green
+284,70214,1,North Station,555.0893590655621,Hawes Street,Hawes Street - Green Line - Park Street & North,green
+285,70215,0,Cleveland Circle,533.8934147695725,Kent Street,Kent Street - Green Line - (C) Cleveland Circle,green
+286,70216,1,Government Center,4.0,Kent Street,Kent Street - Green Line - Park Street & North,green
+287,70216,1,Lechmere,807.0,Kent Street,Kent Street - Green Line - Park Street & North,green
+288,70216,1,North Station,554.647634771044,Kent Street,Kent Street - Green Line - Park Street & North,green
+289,70217,0,Cleveland Circle,535.8711273570186,Saint Paul Street,Saint Paul Street - Green Line - (C) Cleveland Circle,green
+290,70218,1,North Station,552.9725216994061,Saint Paul Street,Saint Paul Street - Green Line - Park Street & North,green
+291,70218,1,Park St,708.0,Saint Paul Street,Saint Paul Street - Green Line - Park Street & North,green
+292,70219,0,Cleveland Circle,544.4598110894146,Coolidge Corner,Coolidge Corner - Green Line - (C) Cleveland Circle,green
+293,70220,1,Government Center,496.0,Coolidge Corner,Coolidge Corner - Green Line - Park Street & North,green
+294,70220,1,North Station,552.7162911056151,Coolidge Corner,Coolidge Corner - Green Line - Park Street & North,green
+295,70220,1,Park St,577.0,Coolidge Corner,Coolidge Corner - Green Line - Park Street & North,green
+296,70223,0,Cleveland Circle,553.0862371348134,Summit Avenue,Summit Avenue - Green Line - (C) Cleveland Circle,green
+297,70224,1,North Station,553.5239568295868,Summit Avenue,Summit Avenue - Green Line - Park Street & North,green
+298,70225,0,Cleveland Circle,554.5111424802722,Brandon Hall,Brandon Hall - Green Line - (C) Cleveland Circle,green
+299,70226,1,North Station,552.8368591139327,Brandon Hall,Brandon Hall - Green Line - Park Street & North,green
+300,70227,0,Cleveland Circle,553.8484799445151,Fairbanks Street,Fairbanks Street - Green Line - (C) Cleveland Circle,green
+301,70228,1,North Station,552.9583085169744,Fairbanks Street,Fairbanks Street - Green Line - Park Street & North,green
+302,70229,0,Cleveland Circle,553.6068727886594,Washington Square,Washington Square - Green Line - (C) Cleveland Circle,green
+303,70230,1,Government Center,66.0,Washington Square,Washington Square - Green Line - Park Street & North,green
+304,70230,1,North Station,553.454468416472,Washington Square,Washington Square - Green Line - Park Street & North,green
+305,70230,1,Park St,721.0,Washington Square,Washington Square - Green Line - Park Street & North,green
+306,70231,0,Cleveland Circle,553.6353123482203,Tappan Street,Tappan Street - Green Line - (C) Cleveland Circle,green
+307,70232,1,Government Center,215.0,Tappan Street,Tappan Street - Green Line - Park Street & North,green
+308,70232,1,North Station,554.0884945621065,Tappan Street,Tappan Street - Green Line - Park Street & North,green
+309,70233,0,Cleveland Circle,553.5833969774816,Dean Road,Dean Road - Green Line - (C) Cleveland Circle,green
+310,70234,1,Government Center,681.0,Dean Road,Dean Road - Green Line - Park Street & North,green
+311,70234,1,Lechmere,743.0,Dean Road,Dean Road - Green Line - Park Street & North,green
+312,70234,1,North Station,554.2510205017658,Dean Road,Dean Road - Green Line - Park Street & North,green
+313,70235,0,Cleveland Circle,552.6907989082666,Englewood Avenue,Englewood Avenue - Green Line - (C) Cleveland Circle,green
+314,70236,1,Government Center,606.0,Englewood Avenue,Englewood Avenue - Green Line - Park Street & North,green
+315,70236,1,North Station,644.7989535757646,Englewood Avenue,Englewood Avenue - Green Line - Park Street & North,green
+316,70238,1,Government Center,715.0,Cleveland Circle,Cleveland Circle - Green Line - Park Street & North,green
+317,70238,1,North Station,653.9343128781331,Cleveland Circle,Cleveland Circle - Green Line - Park Street & North,green
+318,70239,0,Heath St,588.6744547134936,Prudential,Prudential - Green Line - (E) Heath Street,green
+319,70240,1,Government Center,611.5,Prudential,Prudential - Green Line - Park Street & North,green
+320,70240,1,Lechmere,589.8682960617455,Prudential,Prudential - Green Line - Park Street & North,green
+321,70240,1,Park St,730.0,Prudential,Prudential - Green Line - Park Street & North,green
+322,70241,0,Heath St,590.2379471996053,Symphony,Symphony - Green Line - (E) Heath Street,green
+323,70242,1,Lechmere,616.8898177865203,Symphony,Symphony - Green Line - Park Street & North,green
+324,70242,1,Park St,717.0,Symphony,Symphony - Green Line - Park Street & North,green
+325,70243,0,Heath St,579.4377065111759,Northeastern University,Northeastern University - Green Line - (E) Heath Street,green
+326,70244,1,Lechmere,593.8218192868719,Northeastern University,Northeastern University - Green Line - Park Street & North,green
+327,70244,1,Park St,889.5,Northeastern University,Northeastern University - Green Line - Park Street & North,green
+328,70245,0,Heath St,579.4719567221387,Museum of Fine Arts,Museum of Fine Arts - Green Line - (E) Heath Street,green
+329,70246,1,Lechmere,592.622154204189,Museum of Fine Arts,Museum of Fine Arts - Green Line - Park Street & North,green
+330,70247,0,Heath St,594.7096830329397,Longwood Medical Area,Longwood Medical Area - Green Line - (E) Heath Street,green
+331,70248,1,Lechmere,592.8352068459162,Longwood Medical Area,Longwood Medical Area - Green Line - Park Street & North,green
+332,70248,1,North Station,552.3333333333334,Longwood Medical Area,Longwood Medical Area - Green Line - Park Street & North,green
+333,70248,1,Park St,757.0,Longwood Medical Area,Longwood Medical Area - Green Line - Park Street & North,green
+334,70249,0,Heath St,597.0792381142828,Brigham Circle,Brigham Circle - Green Line - (E) Heath Street,green
+335,70250,1,Government Center,475.5,Brigham Circle,Brigham Circle - Green Line - Park Street & North,green
+336,70250,1,Lechmere,599.0835224809365,Brigham Circle,Brigham Circle - Green Line - Park Street & North,green
+337,70250,1,North Station,292.0,Brigham Circle,Brigham Circle - Green Line - Park Street & North,green
+338,70250,1,Park St,627.0,Brigham Circle,Brigham Circle - Green Line - Park Street & North,green
+339,70251,0,Heath St,594.4467799308475,Fenwood Road,Fenwood Road - Green Line - (E) Heath Street,green
+340,70252,1,Lechmere,612.4189868118066,Fenwood Road,Fenwood Road - Green Line - Park Street & North,green
+341,70252,1,Park St,7.0,Fenwood Road,Fenwood Road - Green Line - Park Street & North,green
+342,70253,0,Heath St,593.6217330815861,Mission Park,Mission Park - Green Line - (E) Heath Street,green
+343,70254,1,Lechmere,611.9369824488308,Mission Park,Mission Park - Green Line - Park Street & North,green
+344,70255,0,Heath St,607.4796917520791,Riverway,Riverway - Green Line - (E) Heath Street,green
+345,70256,1,Government Center,661.0,Riverway,Riverway - Green Line - Park Street & North,green
+346,70256,1,Lechmere,611.7081145399519,Riverway,Riverway - Green Line - Park Street & North,green
+347,70257,0,Heath St,611.7463118532937,Back of the Hill,Back of the Hill - Green Line - (E) Heath Street,green
+348,70258,1,Lechmere,611.2874147903326,Back of the Hill,Back of the Hill - Green Line - Park Street & North,green
+349,70260,1,Lechmere,634.9615052745846,Heath Street,Heath Street - Green Line,green
+350,70260,1,North Station,161.5,Heath Street,Heath Street - Green Line,green
+351,70260,1,Park St,533.0,Heath Street,Heath Street - Green Line,green
+352,70261,0,Mattapan,643.3151495929802,Ashmont,Ashmont - Mattapan Trolley,red
+353,70263,0,Mattapan,584.8938955256563,Cedar Grove,Cedar Grove - Mattapan Trolley - Mattapan,red
+354,70264,1,Ashmont,594.4161295084388,Cedar Grove,Cedar Grove - Mattapan Trolley - Ashmont,red
+355,70265,0,Mattapan,584.1260718536691,Butler,Butler - Mattapan Trolley - Mattapan,red
+356,70266,1,Ashmont,584.0108154089197,Butler,Butler - Mattapan Trolley - Ashmont,red
+357,70267,0,Mattapan,582.8813978886058,Milton,Milton - Mattapan Trolley - Mattapan,red
+358,70268,1,Ashmont,583.0877129042448,Milton,Milton - Mattapan Trolley - Ashmont,red
+359,70269,0,Mattapan,582.4668575310559,Central Avenue,Central Avenue - Mattapan Trolley - Mattapan,red
+360,70270,1,Ashmont,582.938577743236,Central Avenue,Central Avenue - Mattapan Trolley - Ashmont,red
+361,70271,0,Mattapan,582.9894118218466,Valley Road,Valley Road - Mattapan Trolley - Mattapan,red
+362,70272,1,Ashmont,583.7803691724021,Valley Road,Valley Road - Mattapan Trolley - Ashmont,red
+363,70273,0,Mattapan,585.5654166869849,Capen Street,Capen Street - Mattapan Trolley - Mattapan,red
+364,70274,1,Ashmont,583.937030098056,Capen Street,Capen Street - Mattapan Trolley - Ashmont,red
+365,70276,1,Ashmont,982.2956443240804,Mattapan,Mattapan - Mattapan Trolley - Ashmont,red
+366,70278,0,Forest Hills,589.1638461538462,Assembly,Assembly - Orange Line - Forest Hills,orange
+367,70279,1,Oak Grove,586.5734516028633,Assembly,Assembly - Orange Line - Oak Grove,orange
+368,70501,1,Government Center,324.3758535071384,Lechmere,"Lechmere - Green Line - (D) Union Square, (E) Medford/Tufts",green
+369,70501,1,Lechmere,411.90781876895977,Lechmere,"Lechmere - Green Line - (D) Union Square, (E) Medford/Tufts",green
+370,70501,1,North Station,386.5023474178404,Lechmere,"Lechmere - Green Line - (D) Union Square, (E) Medford/Tufts",green
+371,70501,1,Park St,484.15,Lechmere,"Lechmere - Green Line - (D) Union Square, (E) Medford/Tufts",green
+372,70502,0,Cleveland Circle,1321.157894736842,Lechmere,Lechmere - Green Line - Copley & West,green
+373,70502,0,Heath St,584.5615984082242,Lechmere,Lechmere - Green Line - Copley & West,green
+374,70502,0,Riverside,775.0214599252154,Lechmere,Lechmere - Green Line - Copley & West,green
+375,70505,1,Government Center,345.8333333333333,Gilman Square,Gilman Square - Green Line - (E) Medford/Tufts,green
+376,70505,1,Lechmere,590.7894511149228,Gilman Square,Gilman Square - Green Line - (E) Medford/Tufts,green
+377,70505,1,North Station,212.41666666666666,Gilman Square,Gilman Square - Green Line - (E) Medford/Tufts,green
+378,70505,1,Park St,411.6,Gilman Square,Gilman Square - Green Line - (E) Medford/Tufts,green
+379,70506,0,Heath St,571.541784416633,Gilman Square,Gilman Square - Green Line - Copley & West,green
+380,70507,1,Government Center,355.1666666666667,Magoun Square,Magoun Square - Green Line - (E) Medford/Tufts,green
+381,70507,1,Lechmere,587.8503144654088,Magoun Square,Magoun Square - Green Line - (E) Medford/Tufts,green
+382,70507,1,North Station,224.58333333333334,Magoun Square,Magoun Square - Green Line - (E) Medford/Tufts,green
+383,70507,1,Park St,417.4,Magoun Square,Magoun Square - Green Line - (E) Medford/Tufts,green
+384,70508,0,Heath St,573.2076236820762,Magoun Square,Magoun Square - Green Line - Copley & West,green
+385,70509,1,Government Center,370.125,Ball Square,Ball Square - Green Line - (E) Medford/Tufts,green
+386,70509,1,Lechmere,587.345560650271,Ball Square,Ball Square - Green Line - (E) Medford/Tufts,green
+387,70509,1,North Station,227.58333333333334,Ball Square,Ball Square - Green Line - (E) Medford/Tufts,green
+388,70509,1,Park St,465.9,Ball Square,Ball Square - Green Line - (E) Medford/Tufts,green
+389,70510,0,Heath St,576.6148424543946,Ball Square,Ball Square - Green Line - Copley & West,green
+390,70512,0,Heath St,628.1210575139147,Medford/Tufts,Medford/Tufts - Green Line - Copley & West,green
+391,70513,1,Government Center,442.0,East Somerville,East Somerville - Green Line - (E) Medford/Tufts,green
+392,70513,1,Lechmere,588.0004280821918,East Somerville,East Somerville - Green Line - (E) Medford/Tufts,green
+393,70513,1,North Station,222.0,East Somerville,East Somerville - Green Line - (E) Medford/Tufts,green
+394,70513,1,Park St,413.4,East Somerville,East Somerville - Green Line - (E) Medford/Tufts,green
+395,70514,0,Heath St,571.1569979716024,East Somerville,East Somerville - Green Line - Copley & West,green
+396,70838,0,Bowdoin,1170.0,Bowdoin,Bowdoin - Blue Line - Exit Only,blue
+397,71150,1,Lechmere,464.4,Kenmore,Kenmore - Green Line - Park Street & North,green
+398,71150,1,North Station,896.0,Kenmore,Kenmore - Green Line - Park Street & North,green
+399,71150,1,Park St,550.7350456621004,Kenmore,Kenmore - Green Line - Park Street & North,green
+400,71151,0,Boston College,543.0098602012562,Kenmore,Kenmore - Green Line - (B) Boston College,green
+401,170136,1,Government Center,754.0,Babcock Street,Babcock Street - Green Line - Park Street & North,green
+402,170136,1,Park St,552.597567376372,Babcock Street,Babcock Street - Green Line - Park Street & North,green
+403,170137,0,Boston College,553.4568072191835,Babcock Street,Babcock Street - Green Line - (B) Boston College,green
+404,170140,1,Park St,552.2628733088453,Amory Street,Amory Street - Green Line - Park Street & North,green
+405,170141,0,Boston College,550.4234069328452,Amory Street,Amory Street - Green Line - (B) Boston College,green
