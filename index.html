@@ -4,13 +4,13 @@
 <!-- Metadata -->
 <head>
   <meta charset="utf-8">
-  
+
   <!-- Title -->
   <title>Project Team 11: MBTA Prediction Accuracy and Headways, COSI 116A F24</title>
-  
+
   <!-- CSS Styling -->
   <link rel="stylesheet" href="style.css">
- 
+
   <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
@@ -21,7 +21,7 @@
   <meta name="msapplication-config" content="favicons/browserconfig.xml">
   <meta name="theme-color" content="#ffffff">
 </head>
-git 
+git
 <!-- Main page content -->
 <body>
 
@@ -33,45 +33,56 @@ git
     <h1>Project Team #11: MBTA Prediction Accuracy and Headways, COSI 116A F24</h1>
     <p><strong>Rose Nolan</strong>, <strong>Ananya Kadwe</strong>, <strong>Anya Lefkowitz</strong></p>
     <p>Project-long Course Project as part of COSI 116A: Information Visualization</a>, taught by <a href="https://cs.brandeis.edu/~dylan/">Prof. Dylan Cashman</a>, <a href="https://cs.brandeis.edu/">Brandeis University</a>.</p>
-    
+
     <h1>Motivation</h1>
     <p><em>Summary of user needs and motivating questions.</em></p>
     <p><em>Expectation: There is a clear focus, and a developed explanation of the problem, and a reasonable response is proposed.</em></p>
       <p>
         Our visualization aims to help users understand how headways are distributed across different train lines and across the MBTA as a whole. Our visualization accomplishes this by offering two main views: a Map View and a Line View. Our visualization strives to be informative but easily accessible for MBTA riders to grasp insights without being too complex.
-        The Map View retains the familiar MBTA train map layout while adding data about how long the headways are at each stop (using size and opacity of marks) which lets viewers understand which stops (and hopefully which parts of Boston) have longer headways. 
+        The Map View retains the familiar MBTA train map layout while adding data about how long the headways are at each stop (using size and opacity of marks) which lets viewers understand which stops (and hopefully which parts of Boston) have longer headways.
         The Line View removes occlusion issues in the Map View and allows users to isolate headway patterns by train line while using the same visual encoding. Finally, we offer details on demand by allowing the user to select a specific stop to see the headway over time for that stop as well as the prediction accuracy over time for that stop. These details will be displayed to the side of the main view, allowing viewers to investigate details while simultaneously seeing larger trends in the data.
       </p>
-    
+
     <h1>Visualization</h1>
     <p><em>Include the interactive visualization as part of this page. Static example follows.</em></p>
   </div>
   <!-- Your visualization here -->
   <!-- bar chart  container -->
 
-    <!-- Change viewbox to whatever you want, e.g. "0 0 1000 6000" This determines your aspect ratio and coordinate system -->    
+
+    <!-- Change viewbox to whatever you want, e.g. "0 0 1000 6000" This determines your aspect ratio and coordinate system -->
     <!-- <svg id="vis-svg"
-      preserveAspectRatio="xMidYMid meet" 
-      class="marks" 
-      viewBox="0 0 821 520" 
-      version="1.1" 
-      xmlns="http://www.w3.org/2000/svg" 
+      preserveAspectRatio="xMidYMid meet"
+      class="marks"
+      viewBox="0 0 821 520"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
       xmlns:xlink="http://www.w3.org/1999/xlink">
     <!- Don't delete the closing tag! -->
     <!-- </svg> -->
 
   <div id="container">
     <!-- Responsive SVG container -->
-    <div id="mapchart-container">
-        <svg id="mapchart"></svg>
+    <div id="visualization-container">
+      <!-- Main Visualization -->
+      <div id="main-visualization">
+        <div id="mapchart-container">
+            <svg id="mapchart"></svg>
+        </div>
+        <!-- Slider and label -->
+        <div id="slider-container">
+            <input type="range" id="year-slider" min="2016" max="2022" step="1" value="2016">
+            <div id="year-label">Year: 2016</div>
+        </div>
+        <div id="headway-barchart-container"></div>
+      </div>
+
+      <!-- Bar Chart -->
+      <div id="bar-chart-container">
+        <svg id="bar-chart"></svg>
+      </div>
     </div>
-    <!-- Slider and label -->
-    <div id="slider-container">
-        <input type="range" id="year-slider" min="2016" max="2022" step="1" value="2016">
-        <div id="year-label">Year: 2016</div>
-    </div>
-    <div id="headway-barchart-container"></div>
-</div>
+  </div>
 
 
   <!-- Your writeup goes here -->
@@ -90,7 +101,7 @@ git
     <h1>Data Analysis</h1>
     <p><em>Summary of data, data types, and data preprocessing.</em></p>
     <body>
-      For our visualizations, we used two primary types of data sets, Headways of MBTA Subways from 2016 to 2022 and Rapid Transit Prediction Accuracy. The Headways data was cleaned to more easily utilize the data for our visualizations. The Rapid Transit Prediction Accuracy data was kept mostly the same, except bus data was removed as our visualizations relied only on subway data. 
+      For our visualizations, we used two primary types of data sets, Headways of MBTA Subways from 2016 to 2022 and Rapid Transit Prediction Accuracy. The Headways data was cleaned to more easily utilize the data for our visualizations. The Rapid Transit Prediction Accuracy data was kept mostly the same, except bus data was removed as our visualizations relied only on subway data.
       **WIL ADD MORE**
     </body>
     <p><em>Expectation: Data sources match the problem statement and are appropriate. These descriptions should be very explicit so someone could read your page and properly reproduce your results.</em></p>
@@ -100,7 +111,7 @@ git
     <p><em>Summary of task table.</em></p>
 
     <p><em>Expectation: Clearly describes domain tasks, processes, goals and abstract tasks for domain problems.</em>
-      <body>Our task table consisted of these 5 primary tasks, ranked in order of importance: 
+      <body>Our task table consisted of these 5 primary tasks, ranked in order of importance:
         <ol>
           <li>Identify “peak” time range for a specific subway line</li>
             <em><dd>-This is the most important of our domain tasks as it helps us understand the service demand of the MBTA (specifically the subway) which is important for scheduling and transit-based resource allocation</em></dd>
@@ -114,13 +125,13 @@ git
           <li>Compare headway across years</li>
             <dd><em>-More technical analysis that does not provide much user action. However, this is still very useful and helpful for our visualization.</dd></em>
         </ol>
-        <body>  
+        <body>
   </p>
 
     </em></p>
 
     <h1>Design Process</h1>
-    
+
     <p><em>Sketches and design choices to justify final visualization.</em></p>
 
     <p><em>Expectation: Evidence of iterative improvement.
@@ -137,15 +148,15 @@ git
     <p><em>Short summary of work completed and areas for improvement/future-work.</em></p>
     <p><em>Expectation: Meaningfully wraps up project and has good future directions.</em></p>
     <p><em>
-  Overall, our work depicts two views, one containing a map view of the MBTA subway lines and the other containing a flat Headway view that is a bit easier to view and grasp data. 
-  In both of these views, users are able to toggle/select a bar chart of a specific stop they wish to analyze further. In the future, we could have included more interactivity and views, but we believe we did the best with our ability and time constraints to finish in a timely manner. 
+  Overall, our work depicts two views, one containing a map view of the MBTA subway lines and the other containing a flat Headway view that is a bit easier to view and grasp data.
+  In both of these views, users are able to toggle/select a bar chart of a specific stop they wish to analyze further. In the future, we could have included more interactivity and views, but we believe we did the best with our ability and time constraints to finish in a timely manner.
   For the future, we could tie in more data sets to make this visualization even more informative, but for the average MBTA user this can provide some insights into MBTA headways and prediction accuracy without being too overwhelming and difficult to understand.
 </em></p>
-  
+
     <h1>Acknowledgments</h1>
 
     <p><em>List here where any code, packages/libraries, text, images, designs, etc. that you leverage come from.</em></p>
-    
+
     <ul>
       <li><a href="https://d3js.org/">D3: Data-Driven Documents</a> by Mike Bostock.</li>
       <li><a href="https://codepo8.github.io/css-fork-on-github-ribbon/#">Pure CSS responsive "Fork me on GitHub" ribbon</a> by Chris Heilmann.</li>
@@ -153,9 +164,9 @@ git
       <li><a href="https://d3-graph-gallery.com/graph/interactivity_button.html">HTML and D3 Icons/Buttons</a> </li>
       <li><a href="https://www.w3schools.com/html/html_lists.asp">HTML Lists</a></li>
     </ul>
-    
+
   </div>
-  
+
   <!-- Scripts at the end avoid need for dealing with async, defer, or onload event handlers -->
   <script src="lib/d3.v4/d3.v4.js"></script>
   <script src="js/visualization.js"></script>
