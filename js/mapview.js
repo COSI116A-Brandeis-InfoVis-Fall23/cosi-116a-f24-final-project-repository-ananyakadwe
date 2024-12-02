@@ -3,10 +3,10 @@ const originalMapWidth = 800;
 const originalMapHeight = 600;
 
 // Select the SVG container
-const svg = d3.select("#chart");
+const svg = d3.select("#mapchart");
 
 // Get dimensions from the container
-const container = document.getElementById("chart-container");
+const container = document.getElementById("mapchart-container");
 const svgWidth = container.clientWidth;
 const svgHeight = container.clientHeight;
 
@@ -55,6 +55,7 @@ function updateVisualization(data, selectedYear) {
 
     // Remove circles not in filtered data
     circles.exit().remove();
+    updateBarChart(data, selectedYear);
 }
 // Load the CSV file
 d3.csv("data/Data/merged_stop_locations_and_headways.csv", function(error, data) {
