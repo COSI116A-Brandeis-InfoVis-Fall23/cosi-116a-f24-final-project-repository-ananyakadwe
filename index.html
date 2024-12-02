@@ -21,7 +21,7 @@
   <meta name="msapplication-config" content="favicons/browserconfig.xml">
   <meta name="theme-color" content="#ffffff">
 </head>
-
+git 
 <!-- Main page content -->
 <body>
 
@@ -37,7 +37,12 @@
     <h1>Motivation</h1>
     <p><em>Summary of user needs and motivating questions.</em></p>
     <p><em>Expectation: There is a clear focus, and a developed explanation of the problem, and a reasonable response is proposed.</em></p>
-
+      <p>
+        Our visualization aims to help users understand how headways are distributed across different train lines and across the MBTA as a whole. Our visualization accomplishes this by offering two main views: a Map View and a Line View. Our visualization strives to be informative but easily accessible for MBTA riders to grasp insights without being too complex.
+        The Map View retains the familiar MBTA train map layout while adding data about how long the headways are at each stop (using size and opacity of marks) which lets viewers understand which stops (and hopefully which parts of Boston) have longer headways. 
+        The Line View removes occlusion issues in the Map View and allows users to isolate headway patterns by train line while using the same visual encoding. Finally, we offer details on demand by allowing the user to select a specific stop to see the headway over time for that stop as well as the prediction accuracy over time for that stop. These details will be displayed to the side of the main view, allowing viewers to investigate details while simultaneously seeing larger trends in the data.
+      </p>
+    
     <h1>Visualization</h1>
     <p><em>Include the interactive visualization as part of this page. Static example follows.</em></p>
   </div>
@@ -88,7 +93,8 @@
     <h1>Data Analysis</h1>
     <p><em>Summary of data, data types, and data preprocessing.</em></p>
     <body>
-      hskfjd
+      For our visualizations, we used two primary types of data sets, Headways of MBTA Subways from 2016 to 2022 and Rapid Transit Prediction Accuracy. The Headways data was cleaned to more easily utilize the data for our visualizations. The Rapid Transit Prediction Accuracy data was kept mostly the same, except bus data was removed as our visualizations relied only on subway data. 
+      **WIL ADD MORE**
     </body>
     <p><em>Expectation: Data sources match the problem statement and are appropriate. These descriptions should be very explicit so someone could read your page and properly reproduce your results.</em></p>
 
@@ -96,7 +102,25 @@
 
     <p><em>Summary of task table.</em></p>
 
-    <p><em>Expectation: Clearly describes domain tasks, processes, goals and abstract tasks for domain problems.</em></p>
+    <p><em>Expectation: Clearly describes domain tasks, processes, goals and abstract tasks for domain problems.</em>
+      <body>Our task table consisted of these 5 primary tasks, ranked in order of importance: 
+        <ol>
+          <li>Identify “peak” time range for a specific subway line</li>
+            <em><dd>-This is the most important of our domain tasks as it helps us understand the service demand of the MBTA (specifically the subway) which is important for scheduling and transit-based resource allocation</em></dd>
+          <li>Isolate data by a specific subway line </li>
+            <dd></em>-Allows for a targeted analysis of different modes of the MBTA (more specific and can allow us to sense any clear differences between them)</em></dd>
+          <li>Isolate data by the part of Boston it pertains to</li>
+            <dd><em>-Crucial for understanding regional performance and optimizing service for specific neighborhoods and regions in and out of Boston</em>
+            </dd>
+          <li>How accurate are predictions on specific weeks/months of the year </li>
+            <dd><em>-This is very helpful for trend analysis, but it is still not as important as identifying times in transit routes</dd></em>
+          <li>Compare headway across years</li>
+            <dd><em>-More technical analysis that does not provide much user action. However, this is still very useful and helpful for our visualization.</dd></em>
+        </ol>
+        <body>  
+  </p>
+
+    </em></p>
 
     <h1>Design Process</h1>
     
@@ -104,16 +128,23 @@
 
     <p><em>Expectation: Evidence of iterative improvement.
     Logical discussion of design choices grounded in theory from course.
-    Discusses feedback from usability testing.</em></p>
+    Discusses feedback from usability testing.
+    <body>
+    Throughout our initial sketches to our Figma mock-up, our group has made efforts on selecting and designing visualizations that would be the most informative for users while also in our scope. We have nicely merged some of our initial sketches to our Figma mock-up in a strategic manner which has prepared us to have a clear vision of what we wanted this interactive visualization to look like. Throughout the programming process, we noticed that some of our initial design or visualization choices may not be feasible, but it was easy to work around some of these issues as we had a clear outline through the Figma mock-up.
+<body>
+  </em></p>
 
 
     <h1>Conclusion</h1>
 
     <p><em>Short summary of work completed and areas for improvement/future-work.</em></p>
-    
     <p><em>Expectation: Meaningfully wraps up project and has good future directions.</em></p>
-
-    
+    <p><em>
+  Overall, our work depicts two views, one containing a map view of the MBTA subway lines and the other containing a flat Headway view that is a bit easier to view and grasp data. 
+  In both of these views, users are able to toggle/select a bar chart of a specific stop they wish to analyze further. In the future, we could have included more interactivity and views, but we believe we did the best with our ability and time constraints to finish in a timely manner. 
+  For the future, we could tie in more data sets to make this visualization even more informative, but for the average MBTA user this can provide some insights into MBTA headways and prediction accuracy without being too overwhelming and difficult to understand.
+</em></p>
+  
     <h1>Acknowledgments</h1>
 
     <p><em>List here where any code, packages/libraries, text, images, designs, etc. that you leverage come from.</em></p>
@@ -121,6 +152,9 @@
     <ul>
       <li><a href="https://d3js.org/">D3: Data-Driven Documents</a> by Mike Bostock.</li>
       <li><a href="https://codepo8.github.io/css-fork-on-github-ribbon/#">Pure CSS responsive "Fork me on GitHub" ribbon</a> by Chris Heilmann.</li>
+      <li><a href="https://observablehq.com/@d3/bar-chart/2">Bar Chart in D3</a> </li>
+      <li><a href="https://d3-graph-gallery.com/graph/interactivity_button.html">HTML and D3 Icons/Buttons</a> </li>
+      <li><a href="https://www.w3schools.com/html/html_lists.asp">HTML Lists</a></li>
     </ul>
     
   </div>
