@@ -62,25 +62,27 @@ git
     <!-- </svg> -->
 
   <div id="container">
-    <!-- Responsive SVG container -->
+    <!-- Visualization Section -->
     <div id="visualization-container">
-      <!-- Main Visualization -->
-      <div id="main-visualization">
-        <div id="mapchart-container">
+      <!-- Main Visualization (MBTA Map and Vertical Bar Chart) -->
+      <div id="top-visualization">
+        <div id="main-visualization">
+          <div id="mapchart-container">
             <svg id="mapchart"></svg>
-        </div>
-        <!-- Slider and label -->
-        <div id="slider-container">
+          </div>
+          <!-- Slider and label -->
+          <div id="slider-container">
             <label for="year-slider">Select Year:</label>
             <input type="range" id="year-slider" min="2016" max="2022" step="1" value="2016">
             <div id="year-label">Year: 2016</div>
+          </div>
+        </div>
+        <!-- Bar Chart Container -->
+        <div id="bar-chart-container">
         </div>
       </div>
 
-      <!-- Bar Chart -->
-      <div id="bar-chart-container">
-      </div>
-
+      <!-- Horizontal Bar Chart (Below MBTA Map and Vertical Bar Chart) -->
       <div id="headway-barchart-container"></div>
     </div>
   </div>
