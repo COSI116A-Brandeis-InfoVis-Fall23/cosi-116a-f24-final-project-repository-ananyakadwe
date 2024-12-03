@@ -123,13 +123,13 @@ h1, h2, h3 {
 
 /* Bar Chart Container Styling */
 #bar-chart-container {
-    flex: 1; /* Takes less space compared to the map */
-    width: 100%;
+    flex: 1; /* Take up less space compared to the map */
     background-color: #ffffff;
     border: 1px solid #ccc;
+    height: auto; /* Let the height adjust dynamically */
+    max-height: 500px; /* Limit the maximum height */
+    overflow: auto; /* Add a scroll bar if content overflows */
     padding: 10px;
-    height: 400px; /* Explicit height for consistent visibility */
-    overflow: auto; /* Add scroll if the content overflows */
 }
 
 #bar-chart-container svg {
