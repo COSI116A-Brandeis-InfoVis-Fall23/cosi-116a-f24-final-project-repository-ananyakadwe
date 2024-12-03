@@ -49,8 +49,8 @@
   }
 
   function renderChart(data) {
-    const width = 300;
-    const height = 250
+    const width = 250;
+    const height = 200
     const marginTop = 5;
     const marginRight = 1;
     const marginBottom = 70;
