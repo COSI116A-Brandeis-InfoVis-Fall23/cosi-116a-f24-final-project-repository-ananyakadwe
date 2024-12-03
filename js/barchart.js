@@ -54,11 +54,10 @@
     const width = container.offsetWidth; // Match container width dynamically
     const height = container.offsetHeight || 400; // Default height if not set
 
-    // Adjust margins proportionally to the container size 
-    const marginTop = 30;
-    const marginRight = 20;
-    const marginBottom = 70;
-    const marginLeft = 60;
+    // Adjust margins proportionally to the container size
+    const margin = { top: 30, right: 20, bottom: 70, left: 60 };
+    const chartWidth = width - margin.left - margin.right;
+    const chartHeight = height - margin.top - margin.bottom;
 
 
     //set the scales
