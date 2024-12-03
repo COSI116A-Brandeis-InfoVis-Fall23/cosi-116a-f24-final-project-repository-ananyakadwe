@@ -50,11 +50,11 @@
 
   function renderChart(data) {
     const width = 200;
-    const height = 300
-    const marginTop = 20;
-    const marginRight = 20;
-    const marginBottom = 20;
-    const marginLeft = 20;
+    const height = 150
+    const marginTop = 5;
+    const marginRight = 10;
+    const marginBottom = 10;
+    const marginLeft = 40;
 
     //set the scales
     const x = d3.scaleBand()
