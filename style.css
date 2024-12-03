@@ -143,9 +143,7 @@ h1, h2, h3 {
 /* General styling for the headway barchart container */
 #headway-barchart-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px auto; /* Adds spacing above and below the graph */
+    margin: 20px
 }
 
 
