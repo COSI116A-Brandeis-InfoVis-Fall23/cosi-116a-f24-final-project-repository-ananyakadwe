@@ -94,30 +94,13 @@ h1, h2, h3 {
     justify-content: space-between; /* Add space between items */
     align-items: flex-start; /* Align items to the top */
     width: 100%;
-    margin-bottom: 20px; /* Add spacing below the visualizations */
-}
-
-/* Separator line between sections */
-.section-divider {
-  margin: 40px 0; /* Space above and below the divider */
-  border: 0;
-  border-top: 2px solid #ccc;
-}
-
-/* Write-up Content Styling */
-.content-column {
-  max-width: 800px;
-  margin: 0 auto; /* Center the write-up content */
-  padding: 20px; /* Add padding for better readability */
-  font-size: 18px;
-  line-height: 1.6; /* Improve text readability */
+    margin-top: 20px;
 }
 
 /* Main visualization (Map) */
 #main-visualization {
-    flex: 1; /* Take up twice as much space as the bar chart */
-    margin-right: 10px; /* Add spacing between the map and bar chart */
-    height: 400px; /* Fixed height for consistency */
+    flex: 2; /* Take up twice as much space as the bar chart */
+    margin-right: 20px; /* Add spacing between the map and bar chart */
 }
 
 
@@ -140,31 +123,26 @@ h1, h2, h3 {
 
 /* Bar Chart Container Styling */
 #bar-chart-container {
-  flex: 1; /* Increase this to allocate more space */
-  background-color: #ffffff;
-  border: 1px solid #ccc;
-  padding: 10px;
-  display: flex;
-  justify-content: center; /* Center the chart horizontally */
-  align-items: center; /* Center the chart vertically */
-  height: 400px; /* Increase height for better visibility */
-  overflow: hidden;
+    flex: 1; /* Allow it to take up less space compared to the map */
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    overflow: auto; /* Add a scroll bar if the content overflows */
 }
 
-/* Adjust the SVG styling */
 #bar-chart-container svg {
-    width: 100%; /* Fill the width of the container */
-    height: 100%; /* Scale height proportionally */
-    max-height: 400px; /* Optional: Set a max height */
-    overflow: visible; /* Ensure the chart contents are not cut off */
+    width: 100%; /* Full width of the container */
+    height: auto; /* Let the height scale with the content */
+    overflow: visible; /* Ensure the entire content of the SVG is visible */
 }
 
 
 
 /* General styling for the headway barchart container */
 #headway-barchart-container {
-  margin-top: 20px;
-  margin-bottom: 40px; /* Space before the write-up */
+    display: flex;
+    margin: 20px;
 }
 
 

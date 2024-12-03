@@ -18,7 +18,7 @@
       return;
     }
     const { file, year } = files[index];
-    
+
     d3.csv(file, (data) => {
       data.forEach(d => {
         combinedData.push({
@@ -49,86 +49,71 @@
   }
 
   function renderChart(data) {
-    // Dynamically calculate container dimensions**
-    const container = document.getElementById("bar-chart-container");
-    const width = container.offsetWidth; // Ensure minimum width
-    const height = container.offsetHeight || 400; // Ensure minimum height
+    const width = 928;
+    const height = 500
+    const marginTop = 30;
+    const marginRight = 0;
+    const marginBottom = 70;
+    const marginLeft = 90;
 
-    // Adjusted margins for better spacing**
-    const margin = { top: 30, right: 20, bottom: 70, left: 70 };
-    const chartWidth = width - margin.left - margin.right;
-    const chartHeight = height - margin.top - margin.bottom;
-
-    //Correctly apply chart dimensions to scales**
-    const x = d3
-      .scaleBand()
-      .domain(data.map((d) => d.year))
-      .range([0, chartWidth])
+    //set the scales
+    const x = d3.scaleBand()
+      .domain(data.map(d => d.year)) //x-axis figs (YEARS)
+      .rangeRound([marginLeft, width - marginRight])
       .padding(0.1);
 
-    const y = d3
-      .scaleLinear()
-      .domain([0, d3.max(data, (d) => d.average_headway)])
-      .range([chartHeight, 0]);
+    const y = d3.scaleLinear()
+      .domain([0, d3.max(data, d => d.average_headway)]) //y-axis figs (HEADWAY)
+      .rangeRound([height - marginBottom, marginTop]);
 
-    // Updated SVG dimensions**
-    const svg = d3
-      .select("#bar-chart-container")
+     //create the SVG container
+     const svg = d3.select("#bar-chart-container")
       .append("svg")
       .attr("width", width)
       .attr("height", height);
 
-    const chart = svg
-      .append("g")
-      .attr("transform", `translate(${margin.left},${margin.top})`);
-
-    // Ensure bars render correctly within the dimensions**
-    chart
-      .selectAll(".bar")
+    //add bars
+    svg.append("g")
+      .attr("fill", "red") //CHANGE COLOR FOR EACH STOP LINE
+      .selectAll("rect")
       .data(data)
       .enter()
       .append("rect")
-      .attr("class", "bar")
-      .attr("x", (d) => x(d.year))
-      .attr("y", (d) => y(d.average_headway))
-      .attr("width", x.bandwidth())
-      .attr("height", (d) => chartHeight - y(d.average_headway))
-      .attr("fill", "steelblue");
+      .attr("x", d => x(d.year))
+      .attr("y", d => y(d.average_headway))
+      .attr("height", d => y(0) - y(d.average_headway))
+      .attr("width", x.bandwidth());
 
-    //Render X-axis with proper formatting**
-    chart
-      .append("g")
-      .attr("transform", `translate(0,${chartHeight})`)
+    //x-axis
+    svg.append("g")
+      .attr("transform", translate(0,${height - marginBottom}))
       .call(d3.axisBottom(x).tickFormat(d3.format("d")))
       .selectAll("text")
-      .attr("transform", "rotate(-45)") // Rotated for better readability
-      .style("text-anchor", "end")
       .style("font-size", "12px");
 
-    //Render Y-axis with properly scaled ticks**
-    chart
-      .append("g")
-      .call(d3.axisLeft(y).ticks(6).tickFormat((d) => `${d.toFixed(0)} sec`))
+    //y-axis
+    svg.append("g")
+      .attr("transform", translate(${marginLeft},0))
+      .call(d3.axisLeft(y).ticks(6).tickFormat(d => ${d.toFixed(0)} sec))
+      //.call(d3.axisLeft(y).tickFormat(y => (y * 100).toFixed()))
       .selectAll("text")
-      .style("font-size", "12px");
+      .style("font-size", "12x");
 
-    //Added Y-axis Label**
-    svg
-      .append("text")
-      .attr("transform", "rotate(-90)")
+    //y-axis label
+    svg.append("text")
       .attr("x", -height / 2)
-      .attr("y", margin.left / 3)
+      .attr("y", marginLeft / 3)
+      .attr("transform", "rotate(-90)")
       .attr("text-anchor", "middle")
       .text("Average Headway (seconds)")
-      .style("font-size", "14px");
+      .style("font-size", "16px");
 
-    //Added X-axis Label**
-    svg
-      .append("text")
+    //x-axis label
+    svg.append("text")
       .attr("x", width / 2)
-      .attr("y", height - margin.bottom / 4)
+      .attr("y", height - marginBottom / 4)
       .attr("text-anchor", "middle")
       .text("Year")
-      .style("font-size", "14px");
+      .style("font-size", "16px");
     }
 })());
