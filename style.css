@@ -102,6 +102,26 @@ h1, h2, h3 {
     height: 100%;
 }
 
+/* Bar Chart Container Styling */
+#bar-chart-container {
+    flex: 1;
+    width: 100%;
+    height: 500px; /* Adjust as needed */
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    position: relative;
+}
+
+#bar-chart-container svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
 /* General styling for the headway barchart container */
 #headway-barchart-container {
     display: flex;
