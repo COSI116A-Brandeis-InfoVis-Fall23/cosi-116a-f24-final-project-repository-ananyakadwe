@@ -49,11 +49,11 @@
   }
 
   function renderChart(data) {
-    const width = 200;
-    const height = 150
+    const width = 300;
+    const height = 250
     const marginTop = 5;
     const marginRight = 1;
-    const marginBottom = 50;
+    const marginBottom = 70;
     const marginLeft = 90;
 
     //set the scales
