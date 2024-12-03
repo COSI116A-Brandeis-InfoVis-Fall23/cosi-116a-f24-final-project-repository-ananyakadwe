@@ -53,8 +53,8 @@
     const height = 150
     const marginTop = 5;
     const marginRight = 1;
-    const marginBottom = 20;
-    const marginLeft = 60;
+    const marginBottom = 50;
+    const marginLeft = 90;
 
     //set the scales
     const x = d3.scaleBand()
