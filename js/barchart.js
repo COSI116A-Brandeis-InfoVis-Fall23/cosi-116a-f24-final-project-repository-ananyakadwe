@@ -51,73 +51,83 @@
   function renderChart(data) {
     // Get the container dimensions dynamically
     const container = document.getElementById("bar-chart-container");
-    const width = container.offsetWidth; // Match container width dynamically
-    const height = container.offsetHeight || 400; // Default height if not set
+    const width = container.offsetWidth; // Dynamically use the container's width
+    const height = container.offsetHeight || 400; // Dynamically use the container's height
 
-    // Adjust margins proportionally to the container size
+    //Added correct margins and dynamic sizing**
     const margin = { top: 30, right: 20, bottom: 70, left: 60 };
     const chartWidth = width - margin.left - margin.right;
     const chartHeight = height - margin.top - margin.bottom;
 
-
-    //set the scales
-    const x = d3.scaleBand()
-      .domain(data.map(d => d.year)) //x-axis figs (YEARS)
-      .rangeRound([marginLeft, width - marginRight])
+    //Scales now use chartWidth and chartHeight correctly**
+    const x = d3
+      .scaleBand()
+      .domain(data.map((d) => d.year))
+      .range([0, chartWidth])
       .padding(0.1);
 
-    const y = d3.scaleLinear()
-      .domain([0, d3.max(data, d => d.average_headway)]) //y-axis figs (HEADWAY)
-      .rangeRound([height - marginBottom, marginTop]);
+    const y = d3
+      .scaleLinear()
+      .domain([0, d3.max(data, (d) => d.average_headway)])
+      .range([chartHeight, 0]);
 
-     //create the SVG container
-     const svg = d3.select("#bar-chart-container")
+    //Updated SVG and group positioning**
+    const svg = d3
+      .select("#bar-chart-container")
       .append("svg")
       .attr("width", width)
       .attr("height", height);
-      
-    //add bars
-    svg.append("g")
-      .attr("fill", "red") //CHANGE COLOR FOR EACH STOP LINE
-      .selectAll("rect")
+
+    const chart = svg
+      .append("g")
+      .attr("transform", `translate(${margin.left},${margin.top})`);
+
+    //Ensured bars render correctly within dimensions**
+    chart
+      .selectAll(".bar")
       .data(data)
       .enter()
       .append("rect")
-      .attr("x", d => x(d.year))
-      .attr("y", d => y(d.average_headway))
-      .attr("height", d => y(0) - y(d.average_headway))
-      .attr("width", x.bandwidth());
+      .attr("class", "bar")
+      .attr("x", (d) => x(d.year))
+      .attr("y", (d) => y(d.average_headway))
+      .attr("width", x.bandwidth())
+      .attr("height", (d) => chartHeight - y(d.average_headway))
+      .attr("fill", "steelblue");
 
-    //x-axis
-    svg.append("g")
-      .attr("transform", `translate(0,${height - marginBottom})`)
+    //Added properly scaled X-axis**
+    chart
+      .append("g")
+      .attr("transform", `translate(0,${chartHeight})`)
       .call(d3.axisBottom(x).tickFormat(d3.format("d")))
+      .selectAll("text")
+      .style("text-anchor", "middle")
+      .style("font-size", "12px");
+
+    //Added properly scaled Y-axis**
+    chart
+      .append("g")
+      .call(d3.axisLeft(y).ticks(6).tickFormat((d) => `${d.toFixed(0)} sec`))
       .selectAll("text")
       .style("font-size", "12px");
 
-    //y-axis
-    svg.append("g")
-      .attr("transform", `translate(${marginLeft},0)`)
-      .call(d3.axisLeft(y).ticks(6).tickFormat(d => `${d.toFixed(0)} sec`))
-      //.call(d3.axisLeft(y).tickFormat(y => (y * 100).toFixed()))
-      .selectAll("text")
-      .style("font-size", "12x");
-
-    //y-axis label
-    svg.append("text")
-      .attr("x", -height / 2)
-      .attr("y", marginLeft / 3)
+    //Added Y-axis Label**
+    svg
+      .append("text")
+      .attr("x", -chartHeight / 2)
+      .attr("y", margin.left / 3)
       .attr("transform", "rotate(-90)")
       .attr("text-anchor", "middle")
       .text("Average Headway (seconds)")
-      .style("font-size", "16px");
+      .style("font-size", "14px");
 
-    //x-axis label
-    svg.append("text")
+    //Added X-axis Label**
+    svg
+      .append("text")
       .attr("x", width / 2)
-      .attr("y", height - marginBottom / 4)
+      .attr("y", height - margin.bottom / 4)
       .attr("text-anchor", "middle")
       .text("Year")
-      .style("font-size", "16px");
+      .style("font-size", "14px");
     }
 })());
