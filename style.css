@@ -123,23 +123,23 @@ h1, h2, h3 {
 
 /* Bar Chart Container Styling */
 #bar-chart-container {
-    flex: 1; /* Maintain relative space compared to the map */
-    width: 100%; /* Ensure it takes full width within its container */
-    height: auto; /* Allow height to adjust automatically */
-    background-color: #ffffff; /* Keep background color */
-    border: 1px solid #ccc; /* Add a border for definition */
-    padding: 10px; /* Add padding for spacing */
-    overflow: visible; /* Ensure no content is hidden */
+    flex: 1; /* Maintain proportional space */
+    height: auto; /* Allow height to adjust */
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 10px; /* Provide some padding */
+    overflow: hidden; /* Prevent overflow issues */
     display: flex; /* Use flex for alignment */
-    align-items: center; /* Center align the content vertically */
-    justify-content: center; /* Center align horizontally */
+    justify-content: center; /* Center the bar chart horizontally */
+    align-items: center; /* Center the bar chart vertically */
 }
 
 /* Adjust the SVG styling */
 #bar-chart-container svg {
-    width: 100%; /* Ensure it fills the container width */
-    height: 100%; /* Ensure it scales properly within the container */
-    overflow: visible; /* Ensure all content is visible */
+    width: 100%; /* Fill the width of the container */
+    height: 100%; /* Scale height proportionally */
+    max-height: 400px; /* Optional: Set a max height */
+    overflow: visible; /* Ensure the chart contents are not cut off */
 }
 
 
