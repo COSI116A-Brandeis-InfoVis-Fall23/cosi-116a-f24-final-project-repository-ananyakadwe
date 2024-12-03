@@ -21,7 +21,7 @@ h1, h2, h3 {
   height: 100%;
 }
 
-/* Fork on GitHub ribbon via https://codepo8.github.io/css-fork-on-github-ribbon/# */  
+/* Fork on GitHub ribbon via https://codepo8.github.io/css-fork-on-github-ribbon/# */
 #forkongithub a{
 	background:#00F;
 	color:#fff;
@@ -123,26 +123,29 @@ h1, h2, h3 {
 
 /* Bar Chart Container Styling */
 #bar-chart-container {
-    flex: 1; /* Take up less space compared to the map */
+    flex: 1; /* Allow it to take up less space compared to the map */
+    width: 100%;
     background-color: #ffffff;
     border: 1px solid #ccc;
-    height: auto; /* Let the height adjust dynamically */
-    max-height: 500px; /* Limit the maximum height */
-    overflow: auto; /* Add a scroll bar if content overflows */
     padding: 10px;
+    overflow: auto; /* Add a scroll bar if the content overflows */
 }
 
 #bar-chart-container svg {
     width: 100%; /* Full width of the container */
-    height: 100%; /* Scale SVG to container height */
-    overflow: visible; /* Ensure all content is visible */
+    height: auto; /* Let the height scale with the content */
+    overflow: visible; /* Ensure the entire content of the SVG is visible */
 }
+
+
 
 /* General styling for the headway barchart container */
 #headway-barchart-container {
     display: flex;
     margin: 20px;
 }
+
+
 
 /* Slider container */
 #slider-container {
