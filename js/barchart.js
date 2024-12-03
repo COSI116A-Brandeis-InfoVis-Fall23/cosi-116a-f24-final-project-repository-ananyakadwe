@@ -55,7 +55,7 @@
     const height = container.offsetHeight || 400; // Ensure minimum height
 
     // Adjusted margins for better spacing**
-    const margin = { top: 30, right: 30, bottom: 70, left: 70 };
+    const margin = { top: 30, right: 20, bottom: 70, left: 70 };
     const chartWidth = width - margin.left - margin.right;
     const chartHeight = height - margin.top - margin.bottom;
 
@@ -117,7 +117,7 @@
       .append("text")
       .attr("transform", "rotate(-90)")
       .attr("x", -height / 2)
-      .attr("y", margin.left / 2.5)
+      .attr("y", margin.left / 3)
       .attr("text-anchor", "middle")
       .text("Average Headway (seconds)")
       .style("font-size", "14px");

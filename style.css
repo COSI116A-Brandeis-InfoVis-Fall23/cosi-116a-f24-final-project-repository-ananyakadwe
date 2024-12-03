@@ -94,13 +94,12 @@ h1, h2, h3 {
     justify-content: space-between; /* Add space between items */
     align-items: flex-start; /* Align items to the top */
     width: 100%;
-    margin-top: 20px;
 }
 
 /* Main visualization (Map) */
 #main-visualization {
-    flex: 2; /* Take up twice as much space as the bar chart */
-    margin-right: 20px; /* Add spacing between the map and bar chart */
+    flex: 1; /* Take up twice as much space as the bar chart */
+    margin-right: 10px; /* Add spacing between the map and bar chart */
 }
 
 
@@ -123,15 +122,15 @@ h1, h2, h3 {
 
 /* Bar Chart Container Styling */
 #bar-chart-container {
-    flex: 1; /* Maintain proportional space */
-    height: auto; /* Allow height to adjust */
-    background-color: #ffffff;
-    border: 1px solid #ccc;
-    padding: 10px; /* Provide some padding */
-    overflow: hidden; /* Prevent overflow issues */
-    display: flex; /* Use flex for alignment */
-    justify-content: center; /* Center the bar chart horizontally */
-    align-items: center; /* Center the bar chart vertically */
+  flex: 2; /* Increase this to allocate more space */
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  display: flex;
+  justify-content: center; /* Center the chart horizontally */
+  align-items: center; /* Center the chart vertically */
+  height: 500px; /* Increase height for better visibility */
+  overflow: hidden;
 }
 
 /* Adjust the SVG styling */
