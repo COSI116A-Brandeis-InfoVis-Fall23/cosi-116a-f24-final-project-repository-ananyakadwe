@@ -100,6 +100,7 @@ h1, h2, h3 {
 #main-visualization {
     flex: 1; /* Take up twice as much space as the bar chart */
     margin-right: 10px; /* Add spacing between the map and bar chart */
+    height: 400px; /* Fixed height for consistency */
 }
 
 
@@ -122,14 +123,14 @@ h1, h2, h3 {
 
 /* Bar Chart Container Styling */
 #bar-chart-container {
-  flex: 2; /* Increase this to allocate more space */
+  flex: 1; /* Increase this to allocate more space */
   background-color: #ffffff;
   border: 1px solid #ccc;
   padding: 10px;
   display: flex;
   justify-content: center; /* Center the chart horizontally */
   align-items: center; /* Center the chart vertically */
-  height: 500px; /* Increase height for better visibility */
+  height: 400px; /* Increase height for better visibility */
   overflow: hidden;
 }
 

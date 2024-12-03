@@ -51,7 +51,7 @@
   function renderChart(data) {
     // Dynamically calculate container dimensions**
     const container = document.getElementById("bar-chart-container");
-    const width = container.offsetWidth || 500; // Ensure minimum width
+    const width = container.offsetWidth; // Ensure minimum width
     const height = container.offsetHeight || 400; // Ensure minimum height
 
     // Adjusted margins for better spacing**
