@@ -1,5 +1,5 @@
 // Set the dimensions and margins of the graph
-var margin = {top: 20, right: 30, bottom: 40, left: 90},
+var margin = {top: 20, right: 30, bottom: 40, left: 150},
     width = 460 - margin.left - margin.right,
     height = 1000 - margin.top - margin.bottom;
 
@@ -56,6 +56,8 @@ function updateBarChart(data, selectedYear) {
   svgContainer.append("g")
     .attr("class", "y-axis")
     .call(d3.axisLeft(y));
+    .selectAll("text")
+    .style("font-size", "12px"); // Reduced font size
 
   // Define a color scale for the "line" column
   var colorScale = d3.scaleOrdinal()
