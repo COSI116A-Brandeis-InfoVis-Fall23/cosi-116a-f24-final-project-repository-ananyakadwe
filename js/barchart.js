@@ -52,9 +52,9 @@
     const width = 200;
     const height = 150
     const marginTop = 5;
-    const marginRight = 10;
-    const marginBottom = 10;
-    const marginLeft = 40;
+    const marginRight = 1;
+    const marginBottom = 20;
+    const marginLeft = 60;
 
     //set the scales
     const x = d3.scaleBand()
