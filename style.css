@@ -94,6 +94,24 @@ h1, h2, h3 {
     justify-content: space-between; /* Add space between items */
     align-items: flex-start; /* Align items to the top */
     width: 100%;
+    margin-bottom: 40px; /* Add spacing below the visualizations */
+}
+
+/* Separator line between sections */
+.section-divider {
+  margin: 40px 0; /* Space above and below the divider */
+  border: 0;
+  border-top: 2px solid #ccc;
+}
+
+/* Write-up Content Styling */
+.content-column {
+  max-width: 800px;
+  margin: 0 auto; /* Center the write-up content */
+  padding: 20px; /* Add padding for better readability */
+  font-size: 18px;
+  line-height: 1.6; /* Improve text readability */
+  clear: both; /* Ensure write-up flows below visualizations */
 }
 
 /* Main visualization (Map) */
