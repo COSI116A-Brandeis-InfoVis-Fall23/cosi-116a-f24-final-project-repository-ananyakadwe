@@ -94,7 +94,7 @@ h1, h2, h3 {
     justify-content: space-between; /* Add space between items */
     align-items: flex-start; /* Align items to the top */
     width: 100%;
-    margin-bottom: 40px; /* Add spacing below the visualizations */
+    margin-bottom: 20px; /* Add spacing below the visualizations */
 }
 
 /* Separator line between sections */
@@ -111,7 +111,6 @@ h1, h2, h3 {
   padding: 20px; /* Add padding for better readability */
   font-size: 18px;
   line-height: 1.6; /* Improve text readability */
-  clear: both; /* Ensure write-up flows below visualizations */
 }
 
 /* Main visualization (Map) */
@@ -164,8 +163,8 @@ h1, h2, h3 {
 
 /* General styling for the headway barchart container */
 #headway-barchart-container {
-    display: flex;
-    margin: 20px;
+  margin-top: 20px;
+  margin-bottom: 40px; /* Space before the write-up */
 }
 
 
