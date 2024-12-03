@@ -49,17 +49,17 @@
   }
 
   function renderChart(data) {
-    // Get the container dimensions dynamically
+    // Dynamically calculate container dimensions**
     const container = document.getElementById("bar-chart-container");
-    const width = container.offsetWidth; // Dynamically use the container's width
-    const height = container.offsetHeight || 400; // Dynamically use the container's height
+    const width = container.offsetWidth || 500; // Ensure minimum width
+    const height = container.offsetHeight || 400; // Ensure minimum height
 
-    //Added correct margins and dynamic sizing**
-    const margin = { top: 30, right: 20, bottom: 70, left: 60 };
+    // Adjusted margins for better spacing**
+    const margin = { top: 30, right: 30, bottom: 70, left: 70 };
     const chartWidth = width - margin.left - margin.right;
     const chartHeight = height - margin.top - margin.bottom;
 
-    //Scales now use chartWidth and chartHeight correctly**
+    //Correctly apply chart dimensions to scales**
     const x = d3
       .scaleBand()
       .domain(data.map((d) => d.year))
@@ -71,7 +71,7 @@
       .domain([0, d3.max(data, (d) => d.average_headway)])
       .range([chartHeight, 0]);
 
-    //Updated SVG and group positioning**
+    // Updated SVG dimensions**
     const svg = d3
       .select("#bar-chart-container")
       .append("svg")
@@ -82,7 +82,7 @@
       .append("g")
       .attr("transform", `translate(${margin.left},${margin.top})`);
 
-    //Ensured bars render correctly within dimensions**
+    // Ensure bars render correctly within the dimensions**
     chart
       .selectAll(".bar")
       .data(data)
@@ -95,16 +95,17 @@
       .attr("height", (d) => chartHeight - y(d.average_headway))
       .attr("fill", "steelblue");
 
-    //Added properly scaled X-axis**
+    //Render X-axis with proper formatting**
     chart
       .append("g")
       .attr("transform", `translate(0,${chartHeight})`)
       .call(d3.axisBottom(x).tickFormat(d3.format("d")))
       .selectAll("text")
-      .style("text-anchor", "middle")
+      .attr("transform", "rotate(-45)") // Rotated for better readability
+      .style("text-anchor", "end")
       .style("font-size", "12px");
 
-    //Added properly scaled Y-axis**
+    //Render Y-axis with properly scaled ticks**
     chart
       .append("g")
       .call(d3.axisLeft(y).ticks(6).tickFormat((d) => `${d.toFixed(0)} sec`))
@@ -114,9 +115,9 @@
     //Added Y-axis Label**
     svg
       .append("text")
-      .attr("x", -chartHeight / 2)
-      .attr("y", margin.left / 3)
       .attr("transform", "rotate(-90)")
+      .attr("x", -height / 2)
+      .attr("y", margin.left / 2.5)
       .attr("text-anchor", "middle")
       .text("Average Headway (seconds)")
       .style("font-size", "14px");
