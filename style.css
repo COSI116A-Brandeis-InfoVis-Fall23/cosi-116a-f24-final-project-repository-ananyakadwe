@@ -190,8 +190,8 @@ body.dark-mode {
 
 .theme-toggle {
   position: fixed;
-  top: 160px;
-  right: 160px;
+  top: 120px;
+  right: 120px;
   z-index: 1000;
   background-color: white;
   padding: 5px 10px;
