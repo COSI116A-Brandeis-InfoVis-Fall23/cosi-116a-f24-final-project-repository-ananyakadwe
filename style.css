@@ -128,7 +128,8 @@ h1, h2, h3 {
     background-color: #ffffff;
     border: 1px solid #ccc;
     padding: 10px;
-    overflow: auto; /* Add a scroll bar if the content overflows */
+    overflow: hidden; /* Prevent unwanted scrolling */
+    display: block; /* Ensure the container is visible */
 }
 
 #bar-chart-container svg {

@@ -86,15 +86,15 @@
 
     //x-axis
     svg.append("g")
-      .attr("transform", translate(0,${height - marginBottom}))
+      .attr("transform", `translate(0,${height - marginBottom})`) // Fixed template literal
       .call(d3.axisBottom(x).tickFormat(d3.format("d")))
       .selectAll("text")
       .style("font-size", "12px");
 
     //y-axis
     svg.append("g")
-      .attr("transform", translate(${marginLeft},0))
-      .call(d3.axisLeft(y).ticks(6).tickFormat(d => ${d.toFixed(0)} sec))
+      .attr("transform", `translate(${marginLeft},0)`) // Fixed template literal
+      .call(d3.axisLeft(y).ticks(6).tickFormat(d => `${d.toFixed(0)} sec`)) // Correct template literal
       //.call(d3.axisLeft(y).tickFormat(y => (y * 100).toFixed()))
       .selectAll("text")
       .style("font-size", "12x");
