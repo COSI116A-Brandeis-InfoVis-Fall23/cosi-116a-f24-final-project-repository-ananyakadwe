@@ -89,7 +89,9 @@
       .attr("transform", `translate(0,${height - marginBottom})`) // Fixed template literal
       .call(d3.axisBottom(x).tickFormat(d3.format("d")))
       .selectAll("text")
-      .style("font-size", "12px");
+      .attr("transform", "rotate(-45)")
+      .style("text-anchor", "end")
+      .style("font-size", "10px");
 
     //y-axis
     svg.append("g")
@@ -97,7 +99,7 @@
       .call(d3.axisLeft(y).ticks(6).tickFormat(d => `${d.toFixed(0)} sec`)) // Correct template literal
       //.call(d3.axisLeft(y).tickFormat(y => (y * 100).toFixed()))
       .selectAll("text")
-      .style("font-size", "12x");
+      .style("font-size", "10x");
 
     //y-axis label
     svg.append("text")
