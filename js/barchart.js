@@ -49,12 +49,12 @@
   }
 
   function renderChart(data) {
-    const width = 928;
-    const height = 500
-    const marginTop = 30;
-    const marginRight = 0;
-    const marginBottom = 70;
-    const marginLeft = 90;
+    const width = 600;
+    const height = 400
+    const marginTop = 40;
+    const marginRight = 20;
+    const marginBottom = 100;
+    const marginLeft = 80;
 
     //set the scales
     const x = d3.scaleBand()
@@ -106,7 +106,7 @@
       .attr("transform", "rotate(-90)")
       .attr("text-anchor", "middle")
       .text("Average Headway (seconds)")
-      .style("font-size", "16px");
+      .style("font-size", "12px");
 
     //x-axis label
     svg.append("text")
@@ -114,6 +114,6 @@
       .attr("y", height - marginBottom / 4)
       .attr("text-anchor", "middle")
       .text("Year")
-      .style("font-size", "16px");
+      .style("font-size", "12px");
     }
 })());
