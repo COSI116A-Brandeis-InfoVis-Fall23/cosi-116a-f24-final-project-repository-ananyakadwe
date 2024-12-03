@@ -85,6 +85,25 @@ h1, h2, h3 {
     margin: 20px auto;
 }
 
+
+
+/* Visualization container as a flex container */
+#visualization-container {
+    display: flex; /* Arrange children in a row */
+    flex-direction: row; /* Horizontal alignment */
+    justify-content: space-between; /* Add space between items */
+    align-items: flex-start; /* Align items to the top */
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Main visualization (Map) */
+#main-visualization {
+    flex: 2; /* Take up twice as much space as the bar chart */
+    margin-right: 20px; /* Add spacing between the map and bar chart */
+}
+
+
 /* Responsive chart container */
 #mapchart-container {
     position: relative;
