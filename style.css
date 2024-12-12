@@ -147,9 +147,7 @@ h1, h2, h3 {
     align-items: center;
     margin: 20px auto; 
     width: 100%;
-
-
-
+}
 
 /* Slider container */
 #slider-container {
@@ -207,4 +205,9 @@ body.dark-mode {
   margin-right: 5px;
 }
 
-
+/* Highlighted circles on the map */
+circle.highlighted {
+  stroke: white;
+  stroke-width: 1px;
+  opacity: 1;
+}

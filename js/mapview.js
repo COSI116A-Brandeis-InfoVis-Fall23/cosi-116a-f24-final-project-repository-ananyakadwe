@@ -1,3 +1,4 @@
+
 // Original dimensions of the map (used for scaling)
 const originalMapWidth = 800;
 const originalMapHeight = 600;
@@ -55,8 +56,56 @@ function updateVisualization(data, selectedYear) {
 
     // Remove circles not in filtered data
     circles.exit().remove();
+
+    //******** */
+    // Add the brushing behavior to the map
+    const brush = d3.brush()
+        .extent([[0, 0], [svgWidth, svgHeight]]) // Full extent of the map
+        .on("start brush end", () => brushed(data, selectedYear)); // Trigger on brush events
+
+    // Append the brush to the SVG
+    svg.append("g")
+        .attr("class", "brush")
+        .call(brush);
+
+    //******** */
+
+    //Update bar chart initially
     updateBarChart(data, selectedYear);
 }
+
+//******** */
+// Function to handle brushing (selecting stops)
+function brushed(data, selectedYear) {
+    if (!d3.event.selection) return; // Exit if nothing is selected
+
+    // Get the bounds of the selection
+    const [[x0, y0], [x1, y1]] = d3.event.selection;
+
+    // Find which circles fall within the selection bounds
+    const selectedStops = [];
+
+    svg.selectAll("circle").classed("highlighted", function(d) {
+        const cx = +d3.select(this).attr("cx");
+        const cy = +d3.select(this).attr("cy");
+
+        // Check if circle is within the bounds
+        const isSelected = x0 <= cx && cx <= x1 && y0 <= cy && cy <= y1;
+
+        if(isSelected){
+            selectedStops.push(d.stop_name); // Save the selected stop names
+        }
+
+        return isSelected; //apply the highlighted class if true
+    });
+
+    console.log("Selected Stops from brushing:", selectedStops);
+
+    // Update the bar chart to show only the selected stops
+    updateBarChartBySelection(selectedStops, data, selectedYear);
+    //******** */
+}
+
 // Load the CSV file
 d3.csv("data/Data/merged_stop_locations_and_headways.csv", function(error, data) {
     if (error) {
@@ -72,16 +121,17 @@ d3.csv("data/Data/merged_stop_locations_and_headways.csv", function(error, data)
         d.headway_time_sec = +d.headway_time_sec;
     });
 
-    // Check the loaded data in the console
-    console.log(data);
+    dataset = data; //assign to global var
+
+    console.log("Data Loaded:", dataset); // Verify the data is loaded
 
     // Add event listener to the slider
     d3.select("#year-slider").on("input", function() {
-        const selectedYear = +this.value;
+        selectedYear = +this.value;
         d3.select("#year-label").text(`Year: ${selectedYear}`);
-        updateVisualization(data, selectedYear);
+        updateVisualization(dataset, selectedYear);
     });
 
     // Initial visualization
-    updateVisualization(data, 2016);
+    updateVisualization(dataset, 2016);
 });

@@ -78,8 +78,27 @@ function updateBarChart(data, selectedYear) {
     .attr("width", function(d) { return x(d.headway_time_sec); })
     .attr("height", y.bandwidth())
     .attr("fill", function(d) { return colorScale(d.line); }) // Use the colorScale based on the "line" column
-
 }
+
+//**** */
+// Function to update the bar chart based on selected stops
+function updateBarChartBySelection(selectedStops, data, selectedYear) {
+  console.log("Selected Stops:", selectedStops); // Log the stops passed from brushing
+
+  // Filter the data to include only selected stops
+  const filteredData = data.filter((d) => selectedStops.includes(d.stop_name) && +d.year === selectedYear);
+  
+  console.log("Filtered Data:", filteredData); // Log the filtered data
+
+  if(selectedStops.length === 0 || filteredData.length === 0){
+    updateBarChart(data.filter((d) => +d.year === selectedYear), selectedYear);
+    return;
+  }
+
+  // Redraw the bar chart with the filtered data
+  updateBarChart(filteredData, selectedYear);
+}
+//**** */
 
 // Load the CSV file
 d3.csv("data/Data/merged_stop_locations_and_headways.csv", function(error, data) {
