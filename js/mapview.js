@@ -34,6 +34,9 @@ function updateVisualization(data, selectedYear) {
         .domain([minHeadway, maxHeadway])
         .range([5, 20]); // Can edit the range as needed
 
+    // Clear all "highlighted" classes before updating circles
+    svg.selectAll("circle").classed("highlighted", false);
+
     // Bind data to circles
     const circles = svg.selectAll("circle")
         .data(filteredData);
@@ -62,6 +65,8 @@ function updateVisualization(data, selectedYear) {
     const brush = d3.brush()
         .extent([[0, 0], [svgWidth, svgHeight]]) // Full extent of the map
         .on("start brush end", () => brushed(data, selectedYear)); // Trigger on brush events
+    
+    svg.select(".brush").remove(); //won't stack multiple brushes
 
     // Append the brush to the SVG
     svg.append("g")
@@ -79,17 +84,17 @@ function updateVisualization(data, selectedYear) {
 function brushed(data, selectedYear) {
     if (!d3.event.selection) return; // Exit if nothing is selected
 
-    // Get the bounds of the selection
+    //Get the bounds of the selection
     const [[x0, y0], [x1, y1]] = d3.event.selection;
 
-    // Find which circles fall within the selection bounds
+    //Find which circles fall within the selection bounds
     const selectedStops = [];
 
     svg.selectAll("circle").classed("highlighted", function(d) {
         const cx = +d3.select(this).attr("cx");
         const cy = +d3.select(this).attr("cy");
 
-        // Check if circle is within the bounds
+        //Checks if circle is within the bounds
         const isSelected = x0 <= cx && cx <= x1 && y0 <= cy && cy <= y1;
 
         if(isSelected){
