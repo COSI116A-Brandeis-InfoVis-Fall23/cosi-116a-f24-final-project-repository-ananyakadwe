@@ -6,7 +6,7 @@
   <meta charset="utf-8">
 
   <!-- Title -->
-  <title>Project Team 11: MBTA Prediction Accuracy and Headways, COSI 116A F24</title>
+  <title>Project Team 11: MBTA Headways, COSI 116A F24</title>
 
   <!-- CSS Styling -->
   <link rel="stylesheet" href="style.css">
@@ -21,7 +21,7 @@
   <meta name="msapplication-config" content="favicons/browserconfig.xml">
   <meta name="theme-color" content="#ffffff">
 </head>
-git
+
 <!-- Main page content -->
 <body>
 
@@ -34,21 +34,25 @@ git
   </div>
   <!-- Your writeup goes here -->
   <div class = "content-column">
-    <h1>Project Team #11: MBTA Prediction Accuracy and Headways, COSI 116A F24</h1>
+    <h1>Project Team #11: MBTA Headways, COSI 116A F24</h1>
     <p><strong>Rose Nolan</strong>, <strong>Ananya Kadwe</strong>, <strong>Anya Lefkowitz</strong></p>
     <p>Project-long Course Project as part of COSI 116A: Information Visualization</a>, taught by <a href="https://cs.brandeis.edu/~dylan/">Prof. Dylan Cashman</a>, <a href="https://cs.brandeis.edu/">Brandeis University</a>.</p>
 
     <h1>Motivation</h1>
-    <p><em>Summary of user needs and motivating questions.</em></p>
-    <p><em>Expectation: There is a clear focus, and a developed explanation of the problem, and a reasonable response is proposed.</em></p>
-      <p>
-        Our visualization aims to help users understand how headways are distributed across different train lines and across the MBTA as a whole. Our visualization accomplishes this by offering two main views: a Map View and a Line View. Our visualization strives to be informative but easily accessible for MBTA riders to grasp insights without being too complex.
-        The Map View retains the familiar MBTA train map layout while adding data about how long the headways are at each stop (using size and opacity of marks) which lets viewers understand which stops (and hopefully which parts of Boston) have longer headways.
-        The Line View removes occlusion issues in the Map View and allows users to isolate headway patterns by train line while using the same visual encoding. Finally, we offer details on demand by allowing the user to select a specific stop to see the headway over time for that stop as well as the prediction accuracy over time for that stop. These details will be displayed to the side of the main view, allowing viewers to investigate details while simultaneously seeing larger trends in the data.
-      </p>
+    <p>
+        Our visualization aims to help users understand how headways are distributed across different train lines and across the MBTA as a whole.
+        <em>Headways</em> are the amount of time between train departures from the same stop. Headways can tell commuters how long on average they may need to wait for a train at that stop.
+        We hope that our visualizations will increase a users understanding of patterns within headway data, for example being able to compare headways across stops, or being able to see where in the MBTA headways are the largest or smallest.
+        We also hope to give users an understanding of how these headway trends have changed over time.
+        Our visualization accomplishes these goals by offering three main visuals:</p>
+        <ul>
+          <li><strong>The map view</strong> displays headways for MBTA train stops in a given year. This visualization uses the familiar MBTA map to allow users to easily find stops that are relevant to their commute.</li>
+          <li><strong>The comparitive bar chart</strong> displays headways for all selected MBTA stops sorted in descending order. This visualization allows users to compare stop headways against eachother, getting a better understanding of patterns within the data.</li>
+          <li><strong>The stop-specific bar chart</strong> displays headways for one MBTA stop across all years of data. This gives users the opportunity to understand how headways change over time.</li>
+        </ul></p>
 
     <h1>Visualization</h1>
-    <p><em>Include the interactive visualization as part of this page. Static example follows.</em></p>
+    
   </div>
   <!-- Your visualization here -->
   <!-- bar chart  container -->
@@ -107,29 +111,36 @@ git
     <h1>Data Analysis</h1>
     <p><em>Summary of data, data types, and data preprocessing.</em></p>
     <body>
-      For our visualizations, we used two primary types of data sets, Headways of MBTA Subways from 2016 to 2022 and Rapid Transit Prediction Accuracy. The Headways data was cleaned to more easily utilize the data for our visualizations. The Rapid Transit Prediction Accuracy data was kept mostly the same, except bus data was removed as our visualizations relied only on subway data.
-      **WIL ADD MORE**
+      <p><strong>Data used:</strong> for these visualizations we used the MBTA's <a href="https://mbta-massdot.opendata.arcgis.com/search?q=MBTA%20Rapid%20Transit%20Headway">Rapid Transit Headway data</a> for the years 2016-2022.
+      </p>
+      <p><strong>Data types:</strong> before data processing, the data has a row for each train departure from each train stop. The has service_date (date), route_id (string), direction_id (int), stop_id (int), start_time_sec (int), end_time_sec (int), headway_time_sec (difference between end_time_sec and start_time_sec, int), and destination (string).
+      </p>
+      <p><strong>Data preprocessing:</strong> in order to process the data, we grouped the data by stop_id, direction_id, and destination. We aggregated the headway_time_sec column by mean to preserve the average headway for each stop.
+      Next, we created a stop_name column in the data using the MBTA's GTFS stop.txt file. This file, once converted into a csv, can be used to match most stop_id values to the corresponding stop name.
+      After creating the stop_name column, we created a line column by using the destination value. If the destination belongs to a specific train line, then we set the line for that row to be the same line as the destination.
+      For rows where destination could not be used to assign line, we use the description from the stop's row in the stops.txt file. If the description contained the name of a line, then that line was used for the row's line.
+      There were still some stops that did not have an assigned line value, so we used the assigned line values for rows with the same stop_id to assign line values for these rows.
+      Finally, we created a year column for the data, setting it to be equal to the year that the row came from.</p>
     </body>
-    <p><em>Expectation: Data sources match the problem statement and are appropriate. These descriptions should be very explicit so someone could read your page and properly reproduce your results.</em></p>
-
+    
     <h1>Task Analysis</h1>
 
     <p><em>Summary of task table.</em></p>
 
     <p><em>Expectation: Clearly describes domain tasks, processes, goals and abstract tasks for domain problems.</em>
-      <body>Our task table consisted of these 5 primary tasks, ranked in order of importance:
+      <body>Here are the main tasks we aimed to include in our visualization:
         <ol>
-          <li>Identify “peak” time range for a specific subway line</li>
-            <em><dd>-This is the most important of our domain tasks as it helps us understand the service demand of the MBTA (specifically the subway) which is important for scheduling and transit-based resource allocation</em></dd>
-          <li>Isolate data by a specific subway line </li>
-            <dd></em>-Allows for a targeted analysis of different modes of the MBTA (more specific and can allow us to sense any clear differences between them)</em></dd>
+          <li>Sort stops by headway</li>
+            <dd>-In order to put a stop's headway in context, we have a comparitive bar chart that allows users to see where the stop ranks in relation to other stops in terms of headway.</dd>
+          <li>Filter data by year </li>
+            <dd>-Since we are using data over the span of many years, we want users to be able to filter data to a specific year in order to isolate spatial patterns in the data.</dd>
           <li>Isolate data by the part of Boston it pertains to</li>
-            <dd><em>-Crucial for understanding regional performance and optimizing service for specific neighborhoods and regions in and out of Boston</em>
+            <dd>-Commuters may care about certain parts of Boston more than others. The brushing ability in the map view allows users to select all stops in a certain area of Boston, limiting the comparative bar chart to only those selected stops.
             </dd>
-          <li>How accurate are predictions on specific weeks/months of the year </li>
-            <dd><em>-This is very helpful for trend analysis, but it is still not as important as identifying times in transit routes</dd></em>
+          <li>Investigate how different train lines compare to one another</li>
+            <dd>-Users can use the comparatibve bar chart to see which lines generally have larger headways as the bars in the chart are color coded by the line they belong to.</dd>
           <li>Compare headway across years</li>
-            <dd><em>-More technical analysis that does not provide much user action. However, this is still very useful and helpful for our visualization.</dd></em>
+            <dd>-The map view and the comparative bar chart only show data for a specific year, so the barchart that shows headway by year for one specific stop. This allows users to see how headways change over time.</dd>
         </ol>
         <body>
   </p>
