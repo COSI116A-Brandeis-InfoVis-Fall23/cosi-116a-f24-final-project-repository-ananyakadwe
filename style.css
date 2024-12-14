@@ -87,11 +87,9 @@ img {
 /* Container for everything */
 #container {
     width: 90%; /* Adjust as needed */
-    max-width: 800px;
+    max-width: 1200px;
     margin: 20px auto;
 }
-
-
 
 /* Visualization container as a flex container */
 #visualization-container {
@@ -108,7 +106,6 @@ img {
     flex: 2; /* Take up twice as much space as the bar chart */
     margin-right: 20px; /* Add spacing between the map and bar chart */
 }
-
 
 /* Responsive chart container */
 #mapchart-container {
