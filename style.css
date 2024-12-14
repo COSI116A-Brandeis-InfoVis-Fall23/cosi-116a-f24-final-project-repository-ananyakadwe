@@ -15,6 +15,12 @@ h1, h2, h3 {
 	margin: 40px auto;
 }
 
+/* Have images fit in the container's width */
+img {
+  display: block;
+ 
+}
+
 /* But your visualization should be full-width and full-height */
 .vis-holder {
   width: 100%;
