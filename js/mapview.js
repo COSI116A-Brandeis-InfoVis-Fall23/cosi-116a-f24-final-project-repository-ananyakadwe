@@ -8,7 +8,7 @@ const svg = d3.select("#mapchart");
 
 // Get dimensions from the container
 const container = document.getElementById("mapchart-container");
-const svgWidth = container.clientWidth;
+const svgWidth = container.clientWidth - 80;
 const svgHeight = container.clientHeight;
 
 function renderLegend(minHeadway, maxHeadway) {
