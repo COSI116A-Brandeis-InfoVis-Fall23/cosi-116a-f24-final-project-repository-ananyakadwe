@@ -11,6 +11,90 @@ const container = document.getElementById("mapchart-container");
 const svgWidth = container.clientWidth;
 const svgHeight = container.clientHeight;
 
+function renderLegend(minHeadway, maxHeadway) {
+    const legendWidth = 250;
+    const legendHeight = 100;
+    const circleSpacing = 80;
+
+    const radiusScale = d3.scaleLinear()
+        .domain([minHeadway, maxHeadway])
+        .range([5, 20]); // Match the range used for circle sizes in the map
+
+    // Select the legend SVG and set its dimensions
+    const legendSvg = d3.select("#legend")
+        .attr("width", legendWidth)
+        .attr("height", legendHeight);
+
+    // Clear existing elements
+    legendSvg.selectAll("*").remove();
+
+    // Add title
+    legendSvg.append("text")
+        .attr("x", legendWidth / 2)
+        .attr("y", 15)
+        .attr("text-anchor", "middle")
+        .style("font-size", "14px")
+        .style("font-weight", "bold")
+        .text("Circle Size Legend");
+
+    // Append a circle for the minimum value
+    legendSvg.append("circle")
+        .attr("cx", circleSpacing)
+        .attr("cy", legendHeight / 2)
+        .attr("r", radiusScale(minHeadway))
+        .attr("fill", "gray")
+        .attr("opacity", 0.8);
+
+    // Append a circle for the maximum value
+    legendSvg.append("circle")
+        .attr("cx", circleSpacing * 2)
+        .attr("cy", legendHeight / 2)
+        .attr("r", radiusScale(maxHeadway))
+        .attr("fill", "gray")
+        .attr("opacity", 0.8);
+
+    // Add labels for the minimum and maximum values
+    legendSvg.append("text")
+        .attr("x", circleSpacing)
+        .attr("y", legendHeight / 2 + radiusScale(maxHeadway) + 15)
+        .attr("text-anchor", "middle")
+        .style("font-size", "12px")
+        .text(`${Math.round(minHeadway)} sec`);
+
+    legendSvg.append("text")
+        .attr("x", circleSpacing)
+        .attr("y", legendHeight / 2 + radiusScale(maxHeadway) + 30) // Slightly lower for "Min Value"
+        .attr("text-anchor", "middle")
+        .style("font-size", "10px")
+        .style("fill", "gray")
+        .text("Min Value");
+
+    legendSvg.append("text")
+        .attr("x", circleSpacing * 2)
+        .attr("y", legendHeight / 2 + radiusScale(maxHeadway) + 15)
+        .attr("text-anchor", "middle")
+        .style("font-size", "12px")
+        .text(`${Math.round(maxHeadway)} sec`);
+
+    legendSvg.append("text")
+        .attr("x", circleSpacing * 2)
+        .attr("y", legendHeight / 2 + radiusScale(maxHeadway) + 30) // Slightly lower for "Max Value"
+        .attr("text-anchor", "middle")
+        .style("font-size", "10px")
+        .style("fill", "gray")
+        .text("Max Value");
+
+    // Add a connecting line between the circles
+    legendSvg.append("line")
+        .attr("x1", circleSpacing + radiusScale(minHeadway))
+        .attr("y1", legendHeight / 2)
+        .attr("x2", circleSpacing * 2 - radiusScale(maxHeadway))
+        .attr("y2", legendHeight / 2)
+        .attr("stroke", "gray")
+        .attr("stroke-dasharray", "4,4")
+        .attr("stroke-width", 1);
+}
+
 // Set SVG dimensions
 svg.attr("viewBox", `0 0 ${svgWidth} ${svgHeight}`);
 
@@ -33,6 +117,8 @@ function updateVisualization(data, selectedYear) {
     const radiusScale = d3.scaleLinear()
         .domain([minHeadway, maxHeadway])
         .range([5, 20]); // Can edit the range as needed
+
+    renderLegend(minHeadway, maxHeadway);
 
     // Clear all "highlighted" classes before updating circles
     svg.selectAll("circle").classed("highlighted", false);

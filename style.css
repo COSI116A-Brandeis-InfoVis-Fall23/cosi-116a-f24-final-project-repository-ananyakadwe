@@ -91,6 +91,17 @@ img {
     margin: 20px auto;
 }
 
+#legend-container {
+  margin-top: 15px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+#legend {
+  display: block;
+  margin: auto;
+}
+
 /* Visualization container as a flex container */
 #visualization-container {
     display: flex; /* Arrange children in a row */
@@ -107,13 +118,21 @@ img {
     margin-right: 20px; /* Add spacing between the map and bar chart */
 }
 
+.tooltip {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  font-family: Arial, sans-serif;
+  color: #333;
+  pointer-events: none; /* Prevent tooltip from interfering with mouse events */
+  max-width: 150px;
+}
+
 /* Responsive chart container */
 #mapchart-container {
     position: relative;
     width: 100%;
     padding-bottom: 66.67%; /* Aspect ratio: 600 / 400 = 3 / 2 = 66.67% */
     background-color: #ffffff;
-    border: 1px solid #ccc;
+    border: none;
 }
 
 #mapchart {
@@ -128,8 +147,8 @@ img {
 #bar-chart-container {
     flex: 1; /* Allow it to take up less space compared to the map */
     width: 100%;
-    background-color: #ffffff;
-    border: 1px solid #ccc;
+    background-color: transparent;
+    border: none;
     padding: 10px;
     overflow: hidden; /* Prevent unwanted scrolling */
     display: block; /* Ensure the container is visible */
@@ -140,8 +159,6 @@ img {
     height: auto; /* Let the height scale with the content */
     overflow: visible; /* Ensure the entire content of the SVG is visible */
 }
-
-
 
 /* General styling for the headway barchart container */
 #headway-barchart-container {

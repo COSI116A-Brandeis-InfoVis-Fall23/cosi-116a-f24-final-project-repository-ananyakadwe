@@ -32,6 +32,17 @@ function updateBarChart(data, selectedYear) {
     return b.headway_time_sec - a.headway_time_sec; // Sort in descending order
   });
 
+// Add a title to the chart (clear previous first)
+  svgContainer.selectAll(".chart-title").remove();
+  svgContainer.append("text")
+      .attr("class", "chart-title")
+      .attr("x", width / 2) // Center horizontally
+      .attr("y", -10) // Position above the chart
+      .attr("text-anchor", "middle")
+      .style("font-size", "17px")
+      .style("font-weight", "bold")
+      .text("Headway Times by Stop");
+
   // Add X axis
   var x = d3.scaleLinear()
     .domain([0, d3.max(filteredData, d => d.headway_time_sec)]) // Use the max headway time in the filtered data
@@ -46,6 +57,16 @@ function updateBarChart(data, selectedYear) {
       .attr("transform", "translate(-10,0)rotate(-45)")
       .style("text-anchor", "end");
 
+  // Add X-axis label
+  svgContainer.selectAll(".x-axis-label").remove(); // Remove existing label (if any)
+  svgContainer.append("text")
+      .attr("class", "x-axis-label")
+      .attr("x", width / 2) // Center horizontally
+      .attr("y", height + margin.bottom - 10) // Position below the axis
+      .attr("text-anchor", "middle")
+      .style("font-size", "16px")
+      .text("Headway Time (seconds)");
+
   // Y axis
   var y = d3.scaleBand()
     .range([0, height])
@@ -56,6 +77,17 @@ function updateBarChart(data, selectedYear) {
   svgContainer.append("g")
     .attr("class", "y-axis")
     .call(d3.axisLeft(y));
+
+    // Add Y-axis label
+  svgContainer.selectAll(".y-axis-label").remove();
+  svgContainer.append("text")
+      .attr("class", "y-axis-label")
+      .attr("x", -height / 2) // Center vertically
+      .attr("y", -margin.left + 20) // Position to the left of the axis
+      .attr("text-anchor", "middle")
+      .attr("transform", "rotate(-90)") // Rotate the label
+      .style("font-size", "16px")
+      .text("Stop Names");
 
   // Define a color scale for the "line" column
   var colorScale = d3.scaleOrdinal()
