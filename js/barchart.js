@@ -72,6 +72,16 @@
       .attr("width", width)
       .attr("height", height);
 
+     // Add a title to the chart
+    svg.append("text")
+    .attr("x", width / 2) // Center horizontally
+    .attr("y", marginTop - 20) // Slightly below the top margin
+    .attr("text-anchor", "middle")
+    .style("font-size", "14px")
+    .style("font-weight", "bold")
+    .text("Average Headway Time Per Year");
+
+
     //add bars
     svg.append("g")
       .attr("fill", "red") //CHANGE COLOR FOR EACH STOP LINE

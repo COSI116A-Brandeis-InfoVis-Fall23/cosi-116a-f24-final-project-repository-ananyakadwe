@@ -1,5 +1,5 @@
 // Set the dimensions and margins of the graph
-var margin = {top: 20, right: 30, bottom: 40, left: 90},
+var margin = {top: 60, right: 30, bottom: 60, left: 160},
     width = 460 - margin.left - margin.right,
     height = 1000 - margin.top - margin.bottom;
 
@@ -48,7 +48,7 @@ function updateBarChart(data, selectedYear) {
     .domain([0, d3.max(filteredData, d => d.headway_time_sec)]) // Use the max headway time in the filtered data
     .range([0, width]);
 
-  svgContainer.selectAll(".x-axis").remove(); // Remove any existing X axis
+  svgContainer.selectAll(".x-axis").remove();
   svgContainer.append("g")
     .attr("class", "x-axis")
     .attr("transform", "translate(0," + height + ")")
@@ -73,7 +73,7 @@ function updateBarChart(data, selectedYear) {
     .domain(filteredData.map(function(d) { return d.stop_name; })) // Y domain based on sorted data
     .padding(0.1);
 
-  svgContainer.selectAll(".y-axis").remove(); // Remove any existing Y axis
+  svgContainer.selectAll(".y-axis").remove();
   svgContainer.append("g")
     .attr("class", "y-axis")
     .call(d3.axisLeft(y));
