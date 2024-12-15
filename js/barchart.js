@@ -1,7 +1,7 @@
 // Immediately Invoked Function Expression to limit access to variables
 ((() => {
   let selectedStop = "All"; // Default selected stop
-
+      
   const files = [
     {file: "data/Data/cleaned_by_year/Headways_2016_cleaned.csv", year: 2016},
     {file: "data/Data/cleaned_by_year/Headways_2017_cleaned.csv", year: 2017},
@@ -26,7 +26,7 @@
         combinedData.push({
           year: year, // add the year from the file info
           stop_name: d.stop_name, // Include stop name
-          line: d.line,           // Include line for color logic
+          line: d.line, // Include line for color logic
           headway_time_sec: +d.headway_time_sec, // Convert headway to a number
         });
       });
@@ -38,9 +38,11 @@
 
   loadFiles(0);
 
-  function processAndRender(data){
-    //Aggregate data by year to calculate the average headway
-    const uniqueStops = Array.from(new Set(data.map((d) => d.stop_name)));
+function processAndRender(data){
+  //Aggregate data by year to calculate the average headway
+  const uniqueStops = Array.from(new Set(data.map((d) => d.stop_name)))
+    .filter(d => d) // Ensure no null/undefined stops
+    .sort((a, b) => a.localeCompare(b)); // Sort alphabetically
 
   const dropdown = d3.select("#stop-dropdown")
     .on("change", function () {
@@ -50,23 +52,28 @@
     });
   
   dropdown.selectAll("option")
-    .data(uniqueStops.filter(d => d)) // Ensure no "All"
+    .data(uniqueStops) // Ensure no "All"
     .enter()
     .append("option")
     .attr("value", d => d)
     .text(d => d);
-
-    //render chart with all data
-    updateChart(data);
+    
+    const defaultStop = uniqueStops[0];
+    dropdown.property("value", defaultStop);
+  
+    // Render the chart with the default stop
+    const defaultData = data.filter(d => d.stop_name === defaultStop);
+    updateChart(defaultData);
   }
 
   function updateChart(filteredData) {
     const container = d3.select("#bar-chart-container").node(); 
-    const containerWidth = container.getBoundingClientRect().width; // Dynamically get container width
-    const width = containerWidth - 100; // Leave padding around edges
+    const containerWidth = container.getBoundingClientRect().width;
+    const width = containerWidth - 100;
     const height = 250;
     const margin = { top: 40, right: 20, bottom: 80, left: 60 };
-    d3.select("#bar-chart").selectAll("*").remove(); // Clear existing chart
+    
+    d3.select("#bar-chart").selectAll("*").remove();
   
     const svg = d3.select("#bar-chart")
       .attr("width", width + margin.left + margin.right)
@@ -91,7 +98,7 @@
   
     // Bars
     chart.selectAll(".bar")
-      .data(filteredData)
+      .data(filteredData)      
       .enter()
       .append("rect")
       .attr("class", "bar")
@@ -138,6 +145,5 @@
       .style("font-size", "12px")
       .text("Headway Time (seconds)");
   }
-  
 
 })());
