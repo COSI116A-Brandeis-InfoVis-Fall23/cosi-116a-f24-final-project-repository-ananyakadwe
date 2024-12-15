@@ -1,5 +1,7 @@
 // Immediately Invoked Function Expression to limit access to variables
 ((() => {
+  let selectedStop = "All"; // Default selected stop
+
   const files = [
     {file: "data/Data/cleaned_by_year/Headways_2016_cleaned.csv", year: 2016},
     {file: "data/Data/cleaned_by_year/Headways_2017_cleaned.csv", year: 2017},
@@ -23,8 +25,9 @@
       data.forEach(d => {
         combinedData.push({
           year: year, // add the year from the file info
-          destination: d.destination,
-          headway_time_sec: +d.headway_time_sec, //headway to a number
+          stop_name: d.stop_name, // Include stop name
+          line: d.line,           // Include line for color logic
+          headway_time_sec: +d.headway_time_sec, // Convert headway to a number
         });
       });
 
@@ -37,95 +40,104 @@
 
   function processAndRender(data){
     //Aggregate data by year to calculate the average headway
-    const aggregatedData = d3.nest()
-      .key(d => d.year) //grouped by year
-      .rollup(values => d3.mean(values, d => d.headway_time_sec)) //avg headway
-      .entries(data)
-      .map(d => ({
-        year: +d.key, //convert year to number
-        average_headway: d.value, //avg headway
-      }));
-      renderChart(aggregatedData);
+    const uniqueStops = Array.from(new Set(data.map((d) => d.stop_name)));
+
+  const dropdown = d3.select("#stop-dropdown")
+    .on("change", function () {
+      const selectedStop = this.value;
+      const filteredData = data.filter((d) => d.stop_name === selectedStop);
+      updateChart(filteredData);
+    });
+  
+  dropdown.selectAll("option")
+    .data(uniqueStops.filter(d => d)) // Ensure no "All"
+    .enter()
+    .append("option")
+    .attr("value", d => d)
+    .text(d => d);
+
+    //render chart with all data
+    updateChart(data);
   }
 
-  function renderChart(data) {
-    const width = 250;
-    const height = 200
-    const marginTop = 5;
-    const marginRight = 1;
-    const marginBottom = 70;
-    const marginLeft = 90;
-
-    //set the scales
+  function updateChart(filteredData) {
+    const container = d3.select("#bar-chart-container").node(); 
+    const containerWidth = container.getBoundingClientRect().width; // Dynamically get container width
+    const width = containerWidth - 100; // Leave padding around edges
+    const height = 250;
+    const margin = { top: 40, right: 20, bottom: 80, left: 60 };
+    d3.select("#bar-chart").selectAll("*").remove(); // Clear existing chart
+  
+    const svg = d3.select("#bar-chart")
+      .attr("width", width + margin.left + margin.right)
+      .attr("height", height + margin.top + margin.bottom);
+  
+    const chart = svg.append("g")
+      .attr("transform", `translate(${margin.left},${margin.top})`);
+  
     const x = d3.scaleBand()
-      .domain(data.map(d => d.year)) //x-axis figs (YEARS)
-      .rangeRound([marginLeft, width - marginRight])
+      .domain(filteredData.map((d) => d.year))
+      .range([0, width])
       .padding(0.1);
-
+  
     const y = d3.scaleLinear()
-      .domain([0, d3.max(data, d => d.average_headway)]) //y-axis figs (HEADWAY)
-      .rangeRound([height - marginBottom, marginTop]);
-
-     //create the SVG container
-     const svg = d3.select("#bar-chart-container")
-      .append("svg")
-      .attr("width", width)
-      .attr("height", height);
-
-     // Add a title to the chart
-    svg.append("text")
-    .attr("x", width / 2) // Center horizontally
-    .attr("y", marginTop - 20) // Slightly below the top margin
-    .attr("text-anchor", "middle")
-    .style("font-size", "14px")
-    .style("font-weight", "bold")
-    .text("Average Headway Time Per Year");
-
-
-    //add bars
-    svg.append("g")
-      .attr("fill", "red") //CHANGE COLOR FOR EACH STOP LINE
-      .selectAll("rect")
-      .data(data)
+      .domain([0, d3.max(filteredData, (d) => d.headway_time_sec)])
+      .nice()
+      .range([height, 0]);
+  
+    const colorScale = d3.scaleOrdinal()
+      .domain(["orange", "blue", "green", "red"])
+      .range(["#FFA500", "#0000FF", "#008000", "#FF0000"]);
+  
+    // Bars
+    chart.selectAll(".bar")
+      .data(filteredData)
       .enter()
       .append("rect")
+      .attr("class", "bar")
       .attr("x", d => x(d.year))
-      .attr("y", d => y(d.average_headway))
-      .attr("height", d => y(0) - y(d.average_headway))
-      .attr("width", x.bandwidth());
-
-    //x-axis
-    svg.append("g")
-      .attr("transform", `translate(0,${height - marginBottom})`) // Fixed template literal
+      .attr("y", d => y(d.headway_time_sec))
+      .attr("width", x.bandwidth())
+      .attr("height", d => height - y(d.headway_time_sec))
+      .attr("fill", d => colorScale(d.line));
+  
+    // X-axis
+    chart.append("g")
+      .attr("transform", `translate(0,${height})`) // Ensure it’s at the correct bottom position
       .call(d3.axisBottom(x).tickFormat(d3.format("d")))
       .selectAll("text")
       .attr("transform", "rotate(-45)")
-      .style("text-anchor", "end")
-      .style("font-size", "10px");
-
-    //y-axis
-    svg.append("g")
-      .attr("transform", `translate(${marginLeft},0)`) // Fixed template literal
-      .call(d3.axisLeft(y).ticks(6).tickFormat(d => `${d.toFixed(0)} sec`)) // Correct template literal
-      //.call(d3.axisLeft(y).tickFormat(y => (y * 100).toFixed()))
-      .selectAll("text")
-      .style("font-size", "10x");
-
-    //y-axis label
+      .style("text-anchor", "end");
+      
+    // Y-axis
+    chart.append("g").call(d3.axisLeft(y).ticks(6));
+  
+    // Chart title
     svg.append("text")
-      .attr("x", -height / 2)
-      .attr("y", marginLeft / 3)
+      .attr("x", (width + margin.left) / 2)
+      .attr("y", margin.top / 2)
+      .attr("text-anchor", "middle")
+      .style("font-size", "16px")
+      .style("font-weight", "bold")
+      .text("Average Headway Time Per Year");
+  
+    // X-axis label
+    svg.append("text")
+      .attr("x", (width + margin.left) / 2)
+      .attr("y", height + margin.bottom + margin.top - 10)
+      .attr("text-anchor", "middle")
+      .style("font-size", "12px")
+      .text("Year");
+  
+    // Y-axis label
+    svg.append("text")
       .attr("transform", "rotate(-90)")
+      .attr("x", -(height / 2) - margin.top)
+      .attr("y", margin.left / 3)
       .attr("text-anchor", "middle")
-      .text("Average Headway (seconds)")
-      .style("font-size", "12px");
+      .style("font-size", "12px")
+      .text("Headway Time (seconds)");
+  }
+  
 
-    //x-axis label
-    svg.append("text")
-      .attr("x", width / 2)
-      .attr("y", height - marginBottom / 4)
-      .attr("text-anchor", "middle")
-      .text("Year")
-      .style("font-size", "12px");
-    }
 })());
