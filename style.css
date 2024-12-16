@@ -198,38 +198,6 @@ body {
   color: #000000;
 }
 
-/* Dark mode styles */
-body.dark-mode {
-  background-color: #121212;
-  color: #ffffff;
-}
-
-.dark-mode .content-column h1,
-.dark-mode .content-column p,
-.dark-mode .content-column li {
-  color: #ffffff;
-}
-
-.dark-mode svg {
-  background-color: #2a2a2a;
-}
-
-.theme-toggle {
-  position: fixed;
-  top: 120px;
-  right: 120px;
-  z-index: 1000;
-  background-color: white;
-  padding: 5px 10px;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.theme-toggle label {
-  font-size: 14px;
-  margin-right: 5px;
-}
-
 /* Highlighted circles on the map */
 circle.highlighted {
   stroke: white;
