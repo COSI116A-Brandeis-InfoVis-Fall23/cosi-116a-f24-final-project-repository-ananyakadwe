@@ -112,7 +112,6 @@ function updateBarChart(data, selectedYear) {
     .attr("fill", function(d) { return colorScale(d.line); }) // Use the colorScale based on the "line" column
 }
 
-//**** */
 // Function to update the bar chart based on selected stops
 function updateBarChartBySelection(selectedStops, data, selectedYear) {
   console.log("Selected Stops:", selectedStops); // Log the stops passed from brushing
@@ -130,7 +129,6 @@ function updateBarChartBySelection(selectedStops, data, selectedYear) {
   // Redraw the bar chart with the filtered data
   updateBarChart(filteredData, selectedYear);
 }
-//**** */
 
 // Load the CSV file
 d3.csv("data/Data/merged_stop_locations_and_headways.csv", function(error, data) {

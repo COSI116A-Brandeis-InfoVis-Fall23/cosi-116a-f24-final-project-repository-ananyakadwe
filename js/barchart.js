@@ -1,7 +1,4 @@
-// Immediately Invoked Function Expression to limit access to variables
-((() => {
-  let selectedStop = "All"; // Default selected stop
-      
+((() => {      
   const files = [
     {file: "data/Data/cleaned_by_year/Headways_2016_cleaned.csv", year: 2016},
     {file: "data/Data/cleaned_by_year/Headways_2017_cleaned.csv", year: 2017},
@@ -24,10 +21,10 @@
     d3.csv(file, (data) => {
       data.forEach(d => {
         combinedData.push({
-          year: year, // add the year from the file info
-          stop_name: d.stop_name, // Include stop name
-          line: d.line, // Include line for color logic
-          headway_time_sec: +d.headway_time_sec, // Convert headway to a number
+          year: year, //add the year from the file info
+          stop_name: d.stop_name, //stop name
+          line: d.line, //line for color logic
+          headway_time_sec: +d.headway_time_sec, //convert headway to a number
         });
       });
 
@@ -39,10 +36,10 @@
   loadFiles(0);
 
 function processAndRender(data){
-  //Aggregate data by year to calculate the average headway
+  //aggregate the data by year to calculate the average headway
   const uniqueStops = Array.from(new Set(data.map((d) => d.stop_name)))
-    .filter(d => d) // Ensure no null/undefined stops
-    .sort((a, b) => a.localeCompare(b)); // Sort alphabetically
+    .filter(d => d) //no null/undefined stops
+    .sort((a, b) => a.localeCompare(b)); //sorts the stops in dropdown alphabetically
 
   const dropdown = d3.select("#stop-dropdown")
     .on("change", function () {
@@ -52,7 +49,7 @@ function processAndRender(data){
     });
   
   dropdown.selectAll("option")
-    .data(uniqueStops) // Ensure no "All"
+    .data(uniqueStops)
     .enter()
     .append("option")
     .attr("value", d => d)
@@ -61,7 +58,7 @@ function processAndRender(data){
     const defaultStop = uniqueStops[0];
     dropdown.property("value", defaultStop);
   
-    // Render the chart with the default stop
+    //render the chart with the default stop
     const defaultData = data.filter(d => d.stop_name === defaultStop);
     updateChart(defaultData);
   }
@@ -92,7 +89,7 @@ function processAndRender(data){
       .nice()
       .range([height, 0]);
   
-    const colorScale = d3.scaleOrdinal()
+    const colorScale = d3.scaleOrdinal() //colors for each specific line
       .domain(["orange", "blue", "green", "red"])
       .range(["#FFA500", "#0000FF", "#008000", "#FF0000"]);
   
@@ -110,7 +107,7 @@ function processAndRender(data){
   
     // X-axis
     chart.append("g")
-      .attr("transform", `translate(0,${height})`) // Ensure it’s at the correct bottom position
+      .attr("transform", `translate(0,${height})`) //for correct bottom position
       .call(d3.axisBottom(x).tickFormat(d3.format("d")))
       .selectAll("text")
       .attr("transform", "rotate(-45)")
@@ -126,7 +123,7 @@ function processAndRender(data){
       .attr("text-anchor", "middle")
       .style("font-size", "16px")
       .style("font-weight", "bold")
-      .text("Average Headway Time Per Year");
+      .text("Average Headway Time Per Year"); //specific title of chart
   
     // X-axis label
     svg.append("text")
@@ -145,5 +142,4 @@ function processAndRender(data){
       .style("font-size", "12px")
       .text("Headway Time (seconds)");
   }
-
 })());

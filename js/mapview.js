@@ -143,23 +143,20 @@ function updateVisualization(data, selectedYear) {
         })
         .attr("opacity", 0.8);
 
-    // Remove circles not in filtered data
+    //remove circles not in filtered data
     circles.exit().remove();
 
-    //******** */
-    // Add the brushing behavior to the map
+    //adds brushing behavior to the map
     const brush = d3.brush()
-        .extent([[0, 0], [svgWidth, svgHeight]]) // Full extent of the map
-        .on("start brush end", () => brushed(data, selectedYear)); // Trigger on brush events
+        .extent([[0, 0], [svgWidth, svgHeight]]) //full extent of the map
+        .on("start brush end", () => brushed(data, selectedYear)); //triggers on brush events
     
     svg.select(".brush").remove(); //won't stack multiple brushes
 
-    // Append the brush to the SVG
+    // Append  brush to the SVG
     svg.append("g")
         .attr("class", "brush")
         .call(brush);
-
-    //******** */
 
     //Update bar chart initially
     updateBarChart(data, selectedYear);
@@ -186,7 +183,7 @@ function brushed(data, selectedYear) {
         if(isSelected){
             selectedStops.push(d.stop_name); // Save the selected stop names
         }
-
+        
         return isSelected; //apply the highlighted class if true
     });
 
@@ -194,7 +191,6 @@ function brushed(data, selectedYear) {
 
     // Update the bar chart to show only the selected stops
     updateBarChartBySelection(selectedStops, data, selectedYear);
-    //******** */
 }
 
 // Load the CSV file
