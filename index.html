@@ -31,18 +31,18 @@
   <div class = "content-column">
     <h1>Project Team #11: MBTA Headways, COSI 116A F24</h1>
     <p><strong>Rose Nolan</strong>, <strong>Ananya Kadwe</strong>, <strong>Anya Lefkowitz</strong></p>
-    <p>Project-long Course Project as part of COSI 116A: Information Visualization</a>, taught by <a href="https://cs.brandeis.edu/~dylan/">Prof. Dylan Cashman</a>, <a href="https://cs.brandeis.edu/">Brandeis University</a>.</p>
+    <p>Semester-long Course Project as part of COSI 116A: Information Visualization</a>, taught by <a href="https://cs.brandeis.edu/~dylan/">Prof. Dylan Cashman</a>, <a href="https://cs.brandeis.edu/">Brandeis University</a>.</p>
 
     <h1>Motivation</h1>
     <p>
         Our visualization aims to help users understand how headways are distributed across different train lines and across the MBTA as a whole.
         <em>Headways</em> are the amount of time between train departures from the same stop. Headways can tell commuters how long on average they may need to wait for a train at that stop.
-        We hope that our visualizations will increase a users understanding of patterns within headway data, for example being able to compare headways across stops, or being able to see where in the MBTA headways are the largest or smallest.
+        We hope that our visualizations will increase a user's understanding of patterns within headway data, for example being able to compare headways across stops, or being able to see where in the MBTA headways are the largest or smallest.
         We also hope to give users an understanding of how these headway trends have changed over time.
         Our visualization accomplishes these goals by offering three main visuals:</p>
         <ul>
           <li><strong>The map view</strong> displays headways for MBTA train stops in a given year. This visualization uses the familiar MBTA map to allow users to easily find stops that are relevant to their commute.</li>
-          <li><strong>The comparitive bar chart</strong> displays headways for all selected MBTA stops sorted in descending order. This visualization allows users to compare stop headways against eachother, getting a better understanding of patterns within the data.</li>
+          <li><strong>The comparative bar chart</strong> displays headways for all selected MBTA stops sorted in descending order. This visualization allows users to compare stop headways against each other, getting a better understanding of patterns within the data.</li>
           <li><strong>The stop-specific bar chart</strong> displays headways for one MBTA stop across all years of data. This gives users the opportunity to understand how headways change over time.</li>
         </ul></p>
 
@@ -93,13 +93,13 @@
 
     <h1>Visualization explanation</h1>
     <body>
-      <p><strong>The map visualization</strong> displays all of the MBTA train stops in the same configuration that they appear in the MBTA's train map. A mark is assigned to each stop. The color of the mark correponds to the color of the line that the stop belongs to (i.e. a red mark represents a stop that is a part of the red line). The size of the mark corresponds to the headway for that stop in the given year. Users can use a slider bar below the map to select the year of data that they want to be visualized. Here is an example image of the map, displaying data for 2016:</p>
+      <p><strong>The map visualization</strong> displays all of the MBTA train stops in the same configuration that they appear in the MBTA's train map. A mark is assigned to each stop. The color of the mark corresponds to the color of the line that the stop belongs to (i.e. a red mark represents a stop that is a part of the red line). The size of the mark corresponds to the headway for that stop in the given year. Users can use a slider bar below the map to select the year of data that they want to be visualized. Here is an example image of the map, displaying data for 2016:</p>
       <img src="images/dvVis1.png">
       <p>Here is an example image of the map showing data for 2022:</p>
       <img src="images/dvVis2.png">
-      <p><strong>The stop barchart</strong> displays headway data for a singular MBTA train stop from 2016 to 2022. This enables users to see how headways change over time for any given stop. Users can use a dropdown menu above this visualization to select which train stop they want to see headway data for. The color of the bars corresponds to the color of the line that the selected stop belongs to (i.e. blue bars mean that the selected stop belongs to the blue line). The height of each bar corresponds to the size of the headway for that stop in that year. Here is an example image of the bar chart for the Airport stop:</p>
+      <p><strong>The stop bar chart</strong> displays headway data for a singular MBTA train stop from 2016 to 2022. This enables users to see how headways change over time for any given stop. Users can use a dropdown menu above this visualization to select which train stop they want to see headway data for. The color of the bars corresponds to the color of the line that the selected stop belongs to (i.e. blue bars mean that the selected stop belongs to the blue line). The height of each bar corresponds to the size of the headway for that stop in that year. Here is an example image of the bar chart for the Airport stop:</p>
       <img src="images/dvVis3.png">
-      <p>Here is an example image of the barchart for the Back of the Hill stop:</p>
+      <p>Here is an example image of the bar chart for the Back of the Hill stop:</p>
       <img src="images/dvVis4.png">
       <p><strong>The comparative bar chart</strong> displays the headways for each stop in the MBTA train system sorted in descending order. This allows users to see which stops have the largest or smallest headways in a given year. The year of data displayed is the same as the year of data being displayed for the map visualization. Here is an example image of the comparative bar chart when it displays all train stops:</p>
       <img src="images/dvVis5.png">
@@ -128,7 +128,7 @@
       <body><em>Here are the main tasks we aimed to include in our visualization:</em>
         <ol>
           <li><strong>Sort stops by headway</strong></li>
-            <dd>• In order to put a stop's headway in context, we have a comparitive bar chart that allows users to see where the stop ranks in relation to other stops in terms of headway.</dd>
+            <dd>• In order to put a stop's headway in context, we have a comparative bar chart that allows users to see where the stop ranks in relation to other stops in terms of headway.</dd>
           <li><strong>Filter data by year</strong></li>
             <dd>• Since we are using data over the span of many years, we want users to be able to filter data to a specific year in order to isolate spatial patterns in the data.</dd>
           <li><strong>Isolate data by the part of Boston it pertains to</strong></li>
@@ -136,8 +136,8 @@
             </dd>
           <li><strong>Investigate how different train lines compare to one another</strong></li>
             <dd>• Users can use the comparative bar chart to see which lines generally have larger headways as the bars in the chart are color coded by the line they belong to.</dd>
-          <li><strong>Headway across years</strong></li>
-            <dd>• The map view and the comparative bar chart only show data for a specific year, so the barchart that shows headway by year for one specific stop. This allows users to see how headways change over time.</dd>
+          <li><strong>Headways across years</strong></li>
+            <dd>• The map view and the comparative bar chart only show data for a specific year, so the bar chart that shows headway by year for one specific stop. This allows users to see how headways change over time.</dd>
         </ol>
         <body>
   </p>
@@ -147,21 +147,21 @@
     <h1>Design Process</h1>
 
     <body>
-    <p>Since our initial sketches, our group has aimed to have a main map visualization with supplemental barcharts. One of our favorite exploratory sketches was by Anya Lefkowitz. It used the same layout as the MBTA subway map, and overlaid circular marks whose size encoded delay data, and whose color encoded the subway line that the stop belongs to.</p><body>
+    <p>Since our initial sketches, our group has aimed to have a main map visualization with supplemental bar charts. One of our favorite exploratory sketches was by Anya Lefkowitz. It used the same layout as the MBTA subway map, and overlaid circular marks whose size encoded delay data, and whose color encoded the subway line that the stop belongs to.</p><body>
     </p>
     <img src="images/dv1.png"
         width="105%" 
         height="auto">
-    <p>We liked how this sketch was accessible to those that use the MBTA regularly, as they would easily be able to locate stops relevant to their commutes by using the familiar MBTA map layout. We also liked how this design was flexible; you can replace the delay data in the sketch with any data that pertains to each subway stop and it would still be elegant and easy to read.
+    <p>We liked how this sketch was accessible to those that use the MBTA regularly, as they would easily be able to locate stops relevant to their commutes by using the familiar MBTA map layout. We also liked how this design was flexible; you can replace the delay data in the sketch with any data that pertains to each subway stop, and it would still be elegant and easy to read.
     </p>
     <p>In this visualization, we felt that using spatial data (by laying marks over the MBTA's map) was justified as headways may have spatial patterns due to certain areas of Boston using the subway more heavily than other areas. We felt it was important to allow users to see where in Boston and in the subway lines headways were larger or smaller. Encoding marks by the subway line they pertain to was also necessary as it allows users to understand how each subway line compares to the others in terms of headways. Without color coding the marks in this visualization it would be difficult to tell if in general the red line has longer headways than the orange line. With color encoding the audience can get a sense of which lines have larger headways just from what color is most prominent in the image. Since color is already used to encode the line that a stop belongs to, we used size to encode the headway data. We considered that this may cause occlusion issues in the visualization, and so in the sketch we played with the idea of having opacity decrease the further from the stop the mark extends.</p>
     <p>Another sketch we decided to incorporate in our final design was by Rose Nolan. The idea of this sketch was to have a bar chart displaying headways over time for a certain train stop when the user clicked on that stop in the map view.</p>
     <img src="images/dv2.png">
-    <p>We ended up scrapping the idea of having the tooltip include a chart, but retained the idea of having a barchart to show data over time in our final mockup of our visualization. We decided to use a barchart as it is easy to see trends at a glance, and the data we are trying to display is only 2 dimensional (time and headway), so there was no need to use a more complex visualization style. Not displayed in this black and white sketch was the idea to have the color of the bars match the color of the line that the stop belongs to. This would add some visual cohesion between the map view Anya drew and this supplemental visualization.</p>
+    <p>We ended up scrapping the idea of having the tooltip include a chart, but retained the idea of having a bar chart to show data over time in our final mockup of our visualization. We decided to use a bar chart as it is easy to see trends at a glance, and the data we are trying to display is only 2 dimensional (time and headway), so there was no need to use a more complex visualization style. Not displayed in this black and white sketch was the idea to have the color of the bars match the color of the line that the stop belongs to. This would add some visual cohesion between the map view Anya drew and this supplemental visualization.</p>
     <img src="images/dv3.png"
         width="125%" 
         height="auto">
-    <p>The <a href="https://www.figma.com/design/8amJAMf4mJ9XbvaXJaJXZs/COSI116-Visualization?node-id=0-1&t=CE2z8RJUx4cp0yKY-1">final mockup</a> changed Anya's sketch from displaying delay data to displaying headway data in order to match the data that would be displayed in the barcharts. The final mockup aimed to have a prediction accuracy barchart alongside the headway barchart to add more context, but in the end we found that there was no prediction accuracy data at a stop level, so we ended up only having a headway by year barchart. In order to replace the prediction accuracy by year chart, we ended up adding a bar chart with the headways of all selected train stops sorted in descending order by headway. This allows users to see how different stops compare to one another in terms of headways, allowing more in depth exploration of the data and its trends.</p>
+    <p>The <a href="https://www.figma.com/design/8amJAMf4mJ9XbvaXJaJXZs/COSI116-Visualization?node-id=0-1&t=CE2z8RJUx4cp0yKY-1">final mockup</a> changed Anya's sketch from displaying delay data to displaying headway data in order to match the data that would be displayed in the bar charts. The final mockup aimed to have a prediction accuracy bar chart alongside the headway barchart to add more context, but in the end we found that there was no prediction accuracy data at a stop level, so we ended up only having a headway by year barchart. In order to replace the prediction accuracy by year chart, we ended up adding a bar chart with the headways of all selected train stops sorted in descending order by headway. This allows users to see how different stops compare to one another in terms of headways, allowing more in depth exploration of the data and its trends.</p>
     
     <h1>Conclusion</h1>
     <p>In the end, we were able to create the map headway visualization to allow users to explore spatial and subway line patterns in the data. We used a slider bar to allow users to change what year the data they are viewing comes from, which lets them get a sense of how the data changes through the years. Our bar chart that contains the headways of all selected train stops allows users to easily compare how certain train stops compare to one another in terms of headways, and our bar chart that displays average headway for all train stops over time gives users an overall sense of how headways have changed over time.
