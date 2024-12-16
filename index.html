@@ -93,10 +93,25 @@
     </video>
 
     <h1>Visualization explanation</h1>
-    <p><em>Final visualization screenshots (PNG images), design justifications, UI walk-through, and linked presentation slides.</em></p>
+    <body>
+      <p><strong>The map visualization</strong> displays all of the MBTA train stops in the same configuration that they appear in the MBTA's train map. A mark is assigned to each stop. The color of the mark correponds to the color of the line that the stop belongs to (i.e. a red mark represents a stop that is a part of the red line). The size of the mark corresponds to the headway for that stop in the given year. Users can use a slider bar below the map to select the year of data that they want to be visualized. Here is an example image of the map, displaying data for 2016:</p>
+      <img src="images/dvVis1.png">
+      <p>Here is an example image of the map showing data for 2022:</p>
+      <img src="images/dvVis2.png">
+      <p><strong>The stop barchart</strong> displays headway data for a singular MBTA train stop from 2016 to 2022. This enables users to see how headways change over time for any given stop. Users can use a dropdown menu above this visualization to select which train stop they want to see headway data for. The color of the bars corresponds to the color of the line that the selected stop belongs to (i.e. blue bars mean that the selected stop belongs to the blue line). The height of each bar corresponds to the size of the headway for that stop in that year. Here is an example image of the bar chart for the Airport stop:</p>
+      <img src="images/dvVis3.png">
+      <p>Here is an example image of the barchart for the Back of the Hill stop:</p>
+      <img src="images/dvVis4.png">
+      <p><strong>The comparative bar chart</strong> displays the headways for each stop in the MBTA train system sorted in descending order. This allows users to see which stops have the largest or smallest headways in a given year. The year of data displayed is the same as the year of data being displayed for the map visualization. Here is an example image of the comparative bar chart when it displays all train stops:</p>
+      <img src="images/dvVis5.png">
+      <p><strong>Brushing</strong> can be used on the map visualization in order to select certain stops to be shown in the comparative bar chart. Here is an image example of brushing being used to select a subset of stops in the MBTA system:</p>
+      <img src="images/dvVis6.png">
+      <p>Here is an image example of the comparative bar chart only showing data for the selected stops in the above image:</p>
+      <img src="images/dvVis7.png">
+      <p><strong>Presentation slides</strong>: <a href="https://docs.google.com/presentation/d/1UpRnx8mn582JMyDj2s66pzSCfxk-udNv1my0AgUJTjU/edit?usp=sharing">access the presentation slides here.</a></p>
+    </body>
 
     <h1>Data Analysis</h1>
-    <p><em>Summary of data, data types, and data preprocessing.</em></p>
     <body>
       <p><strong>Data used:</strong> for these visualizations we used the MBTA's <a href="https://mbta-massdot.opendata.arcgis.com/search?q=MBTA%20Rapid%20Transit%20Headway">Rapid Transit Headway data</a> for the years 2016-2022.
       </p>
@@ -121,7 +136,7 @@
             <dd>• Commuters may care about certain parts of Boston more than others. The brushing ability in the map view allows users to select all stops in a certain area of Boston, limiting the comparative bar chart to only those selected stops.
             </dd>
           <li><strong>Investigate how different train lines compare to one another</strong></li>
-            <dd>• Users can use the comparatibve bar chart to see which lines generally have larger headways as the bars in the chart are color coded by the line they belong to.</dd>
+            <dd>• Users can use the comparative bar chart to see which lines generally have larger headways as the bars in the chart are color coded by the line they belong to.</dd>
           <li><strong>Headway across years</strong></li>
             <dd>• The map view and the comparative bar chart only show data for a specific year, so the barchart that shows headway by year for one specific stop. This allows users to see how headways change over time.</dd>
         </ol>
@@ -169,6 +184,7 @@
       <li><a href="https://d3-graph-gallery.com/graph/interactivity_brush.html">Brushing in d3.js</a></li>
       <li><a href="https://d3-graph-gallery.com/graph/line_select.html">Line plot with dropdown to select group in d3.js</a></li>
       <li><a href="https://medium.com/@kj_schmidt/show-data-on-mouse-over-with-d3-js-3bf598ff8fc2">Show data on mouse-over with d3.js</a></li>
+      <li><a href="https://d3-graph-gallery.com/scatter">d3 tutorial on creating a scatterplot</a></li>
     </ul>
 
   </div>
