@@ -5,7 +5,7 @@ This template will help you get started with your project. Please look through a
 
 ## The GitHub Pages Website
 
-Make sure you publish your project to github pages, and put the URL here: 
+Make sure you publish your project to github pages, and put the URL here: https://cosi116a-brandeis-infovis-fall23.github.io/cosi-116a-f24-final-project-repository-group11_MBTA_Headway/
 
 ### Github Pages
 
