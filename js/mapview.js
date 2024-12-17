@@ -100,7 +100,7 @@ svg.attr("viewBox", `0 0 ${svgWidth} ${svgHeight}`);
 
 // Add the background image
 svg.append("image")
-    .attr("xlink:href", "../images/map.jpg")
+    .attr("xlink:href", "images/map.jpg")
     .attr("x", 0)
     .attr("y", 0)
     .attr("width", svgWidth)
